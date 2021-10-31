@@ -1,1 +1,2 @@
-# stat628--module3
+# STAT 628 Module 3
+Yelp Data Project
