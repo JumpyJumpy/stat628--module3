@@ -2,3 +2,4 @@
 *.json
 /data/*.json
 /yelp_dataset
+.DS_Store
