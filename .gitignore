@@ -2,7 +2,4 @@
 *.json
 /data/*.json
 /yelp_dataset
-<<<<<<< HEAD
-=======
 .DS_Store
->>>>>>> 528585d9839d99151ffffc504690c96701dd3c76
