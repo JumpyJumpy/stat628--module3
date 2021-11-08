@@ -9,11 +9,15 @@ business.describe()
 business.to_csv("business.csv")
 
 review = pd.DataFrame()
+review_json = []
 with open("yelp_dataset/review.json", encoding = "utf-8") as f:
     for line in f:
         tmp = json.loads(line)
         if tmp["business_id"] in ids:
-            review = review.append(tmp, ignore_index = True)
-    #  review = json.load(f)  # does not work, MemoryError
+            # review = review.append(tmp, ignore_index = True)
+            review_json.append(tmp)
 
-review.to_csv("review.csv")
+# review.to_csv("review.csv")
+
+with open("review_sorted.json", "w") as outfile:
+    json.dump(review_json, outfile)
