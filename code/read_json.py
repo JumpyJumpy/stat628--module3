@@ -6,7 +6,7 @@ business = pd.read_json("yelp_dataset/business.json", lines = True)
 business = business[business["categories"].str.contains("Food", na = False)]
 ids = business["business_id"].tolist()
 business.describe()
-business.to_csv("business")
+business.to_csv("business.csv")
 
 review = pd.DataFrame()
 with open("yelp_dataset/review.json", encoding = "utf-8") as f:
