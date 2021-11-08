@@ -3,4 +3,4 @@
 /data/*.json
 /yelp_dataset
 .DS_Store
-*.csv
+business.csv
