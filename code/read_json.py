@@ -16,8 +16,6 @@ with open("yelp_dataset/review.json", encoding = "utf-8") as f:
         tmp = json.loads(line)
         if tmp["business_id"] in ids:
             review = review.append(tmp, ignore_index = True)
-            # review_json.append(tmp)
-            n += 1
 
 
 review.to_csv("review.csv")
