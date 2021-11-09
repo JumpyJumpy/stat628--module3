@@ -4,4 +4,12 @@ import json
 import ast
 
 business = pd.read_csv("business.csv")
-business_attributes = [ast.literal_eval(i) for i in business["attributes"].to_list() if i is not np.nan]
+nested_attributes = [ast.literal_eval(i) for i in business["attributes"].to_list() if i is not np.nan]
+
+attributes = []
+for i in range(len(nested_attributes)):
+    for keys in nested_attributes[i]:
+        attributes.append(keys)
+
+attributes = pd.Series(attributes)
+attributes.value_counts()
