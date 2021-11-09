@@ -17,8 +17,7 @@ with open("yelp_dataset/review.json", encoding = "utf-8") as f:
         if tmp["business_id"] in ids:
             review_json.append(tmp)
 
-
 review = pd.DataFrame(review_json)
 review.to_csv("review.csv")
 with open("review_sorted.json", "w") as out:
-    json.dump(out)
+    json.dump(review_json, out, ensure_ascii = False, indent = 4)
