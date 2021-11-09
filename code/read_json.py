@@ -13,7 +13,7 @@ n = 0
 with open("yelp_dataset/review.json", encoding = "utf-8") as f:
     for line in f:
         tmp = json.loads(line)
-        print(f"Read {n} lines")
+        print(f"Read {n} lines...")
         n += 1
         if tmp["business_id"] in ids:
             review = review.append(tmp, ignore_index = True)
