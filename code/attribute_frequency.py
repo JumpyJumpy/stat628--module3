@@ -12,4 +12,4 @@ for i in range(len(nested_attributes)):
         attributes.append(keys)
 
 attributes = pd.Series(attributes)
-attributes.value_counts()
+print(attributes.value_counts())
