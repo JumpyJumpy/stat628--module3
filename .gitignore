@@ -1,5 +1,4 @@
 .idea/
-.idea/*
 *.json
 /data/*.json
 /yelp_dataset
