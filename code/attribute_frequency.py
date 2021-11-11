@@ -12,8 +12,8 @@ print(attributes.value_counts())
 attributes_counts = attributes.value_counts().to_dict()
 attributes_keys = list(attributes_counts.keys())
 
-business_flattened = pd.concat([business.iloc[:, 0], pd.DataFrame(np.nan, columns = attributes_keys, index = business.index)],
-                               axis = 1)
+business_flattened = \
+    pd.concat([business.iloc[:, 0], pd.DataFrame(np.nan, columns = attributes_keys, index = business.index)], axis = 1)
 
 for idx in business_flattened.index.to_list():
     for keys in business.loc[idx, "attributes"]:
