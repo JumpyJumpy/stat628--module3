@@ -6,14 +6,10 @@ import ast
 # debugging
 # not working
 business = pd.read_csv("business.csv", index_col = 0)
-business = business.loc[~(business["attributes"].isna()), :]
-business["attributes"] = pd.Series([ast.literal_eval(attr) for attr in business["attributes"]])
-attributes = [keys for i in range(len(business["attributes"])) for keys in business["attributes"].iloc[i]]
+business = business.loc[~(pd.isna(business["attributes"])), :]
 
-attributes = []
-for i in range(len(business["attributes"])):
-    for keys in business["attributes"].iloc[i]:
-        attributes.append(keys)
+business["attributes"] = [ast.literal_eval(attr) for attr in business["attributes"]]
+attributes = [keys for i in range(len(business["attributes"])) for keys in business["attributes"].iloc[i]]
 
 
 attributes = pd.Series(attributes)
@@ -29,6 +25,7 @@ business_flattened = \
 for idx in business_flattened.index.to_list():
     for keys in business.loc[idx, "attributes"]:
         print(business.loc[idx, "attributes"][keys])
-        business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
+        print(idx, keys)
+        #business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
 
 business_flattened.to_csv("business_flattened.csv")
