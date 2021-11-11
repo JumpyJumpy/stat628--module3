@@ -3,7 +3,6 @@ import pandas as pd
 import ast
 
 business = pd.read_csv("business.csv", index_col = 0)
-business.replace("")
 business = business.loc[~(pd.isna(business["attributes"])), :]
 
 business["attributes"] = [ast.literal_eval(attr) for attr in business["attributes"]]
