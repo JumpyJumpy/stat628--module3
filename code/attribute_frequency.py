@@ -3,6 +3,7 @@ import pandas as pd
 import ast
 
 business = pd.read_csv("business.csv", index_col = 0)
+business.replace("")
 business = business.loc[~(pd.isna(business["attributes"])), :]
 
 business["attributes"] = [ast.literal_eval(attr) for attr in business["attributes"]]
@@ -21,6 +22,6 @@ business_flattened = \
 
 for idx in business_flattened.index.to_list():
     for keys in business.loc[idx, "attributes"]:
-        business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
+            business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
 
 business_flattened.to_csv("business_flattened.csv")
