@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import json
 import ast
 
 business = pd.read_csv("business.csv")
