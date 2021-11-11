@@ -13,3 +13,7 @@ for i in range(len(nested_attributes)):
 
 attributes = pd.Series(attributes)
 print(attributes.value_counts())
+
+counts = attributes.value_counts().to_dict()
+keys = list(counts.keys())
+
