@@ -2,9 +2,6 @@ import numpy as np
 import pandas as pd
 import ast
 
-# bug found
-# debugging
-# not working
 business = pd.read_csv("business.csv", index_col = 0)
 business = business.loc[~(pd.isna(business["attributes"])), :]
 
@@ -24,8 +21,6 @@ business_flattened = \
 
 for idx in business_flattened.index.to_list():
     for keys in business.loc[idx, "attributes"]:
-        print(business.loc[idx, "attributes"][keys])
-        print(idx, keys)
-        #business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
+        business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
 
 business_flattened.to_csv("business_flattened.csv")
