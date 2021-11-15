@@ -5,9 +5,18 @@ import ast
 business = pd.read_csv("business.csv", index_col = 0)
 business = business.loc[~(pd.isna(business["attributes"])), :]
 
-business["attributes"] = [ast.literal_eval(attr) for attr in business["attributes"]]
+business["attributes"] = business["attributes"].apply(ast.literal_eval)
 attributes = [keys for i in range(len(business["attributes"])) for keys in business["attributes"].iloc[i]]
+business = business.join(pd.json_normalize(business["attributes"]))
 
+nested_column = ["BusinessParking", "Ambience"]
+for col in nested_column:
+    for idx in business.index:
+        if type(business.loc[idx, col]) is str:
+            business.loc[idx, col] = [ast.literal_eval(business.loc[idx, col])]
+
+    types = pd.json_normalize(business[col]).columns.tolist()
+    business = business.join(pd.json_normalize(business[col]))
 
 attributes = pd.Series(attributes)
 print(attributes.value_counts())
@@ -15,12 +24,5 @@ print(attributes.value_counts())
 attributes_counts = attributes.value_counts().to_dict()
 attributes_keys = list(attributes_counts.keys())
 
-business_flattened = \
-    pd.concat([business.iloc[:, 0], pd.DataFrame(np.nan, columns = attributes_keys, index = business.index)], axis = 1)
+business.to_csv("business_flattened.csv")
 
-
-for idx in business_flattened.index.to_list():
-    for keys in business.loc[idx, "attributes"]:
-            business_flattened.loc[idx, keys] = business.loc[idx, "attributes"][keys]
-
-business_flattened.to_csv("business_flattened.csv")
