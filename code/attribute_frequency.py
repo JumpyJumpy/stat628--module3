@@ -15,8 +15,7 @@ for col in nested_column:
         if type(business.loc[idx, col]) is str:
             business.loc[idx, col] = [ast.literal_eval(business.loc[idx, col])]
 
-    types = pd.json_normalize(business[col]).columns.tolist()
-    business = business.join(pd.json_normalize(business[col]))
+business = business.join(pd.json_normalize(business["BusinessParking"]))
 
 attributes = pd.Series(attributes)
 print(attributes.value_counts())
