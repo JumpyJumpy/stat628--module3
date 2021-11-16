@@ -7,7 +7,9 @@ business = business.loc[~(pd.isna(business["attributes"])), :]
 
 business["attributes"] = business["attributes"].apply(ast.literal_eval)
 attributes = [keys for i in range(len(business["attributes"])) for keys in business["attributes"].iloc[i]]
-business = business.join(pd.json_normalize(business["attributes"]))
+attributes_flattened = pd.json_normalize(business["attributes"])
+attributes_flattened.index = business.index
+business = business.join(attributes_flattened)
 
 nested_column = ["BusinessParking", "Ambience"]
 for col in nested_column:
