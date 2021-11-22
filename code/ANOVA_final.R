@@ -2,14 +2,19 @@ library(tidytext)
 library(tidyr)
 library(dplyr)
 library(stringr)
+library(tidyverse)
+library(magrittr)
+library(MASS)
 
 ## get data ##
 ## let NA as one level ##
-anova=read.csv("business_flattened.csv", na.strings = NULL)[,c(10,16,24,31,20,30,23,25,51:64)]
+anova=read.csv("business_flattened.csv", na.strings = NULL)[,c(2,10,16,24,31,20,30,23,25,51:64)]
+summary(anova)
+
 
 
 anova$RestaurantsPriceRange2[is.na(anova$RestaurantsPriceRange2)]=0
-anova$RestaurantsPriceRange2=as.factor(anova$RestaurantsPriceRange2)
+anova$RestaurantsPriceRange2=factor(anova$RestaurantsPriceRange2)
 
 ## data processing ##
 anova$WiFi=gsub("u'free'","FREE",anova$WiFi)
@@ -25,9 +30,16 @@ anova$OutdoorSeating=gsub("None","",anova$OutdoorSeating)
 anova$HasTV=gsub("None","",anova$HasTV)
 anova$RestaurantsReservations=gsub("None","",anova$RestaurantsReservations)
 anova$RestaurantsPriceRange2=gsub("0","",anova$RestaurantsPriceRange2)
+anova[which(anova == "", arr.ind = T)] = "NA"
+
+anova_factor = cbind(anova[,c(1,2)], as.data.frame(lapply(anova[,-c(1,2)], factor)))
+colnames(anova_factor)[1] = "business_id"
 
 
+
+model=lm(stars~.- (business_id), data=anova_factor)
+summary(model)
 ## anova model ##
-model=aov(stars~.,data=anova)
+model=aov(stars~. - business_id,data=anova_factor)
 summary(model)
 
