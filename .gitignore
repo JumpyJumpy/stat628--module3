@@ -1,6 +1,6 @@
 .idea/
 *.json
-/data/*.json
+/data/*
 /yelp_dataset/
 .DS_Store
 *.csv
