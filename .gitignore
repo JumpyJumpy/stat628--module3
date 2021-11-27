@@ -1,7 +1,6 @@
 .idea/
 *.json
-/data/*
-/yelp_dataset/
+/data/
 .DS_Store
 *.csv
 .Rproj.user
