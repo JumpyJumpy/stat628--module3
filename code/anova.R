@@ -21,7 +21,7 @@ write.csv(dataset, "dataset.csv")
 
 ## get data ##
 ## mark NA as one level ##
-anova <- read.csv("business_flattened.csv", na.strings = NULL)[, c(2, 10, 16, 24, 31, 20, 30, 23, 25, 51:64)]
+anova <- read.csv("./data/business_flattened.csv", na.strings = NULL)[, c(2, 10, 16, 24, 31, 20, 30, 23, 25, 51:64)]
 summary(anova)
 
 

@@ -5,7 +5,7 @@ library(tidytext)
 library(tidyr)
 library(dplyr)
 library(stringr)
-reviews <- read.csv("filtered_reviews.csv", stringsAsFactors = F)
+reviews <- read.csv("./data/filtered_reviews.csv", stringsAsFactors = F)
 stars <- reviews$stars
 reviews$stars <- as.integer(reviews$stars)
 
