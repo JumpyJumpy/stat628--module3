@@ -4,4 +4,4 @@ import re
 
 
 
-pd.read_csv
+pd.read_csv("./data/")
