@@ -1,3 +1,4 @@
+## By T Luo ##
 library(tidytext)
 library(tidyr)
 library(dplyr)
