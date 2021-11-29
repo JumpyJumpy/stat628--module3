@@ -1,6 +1,4 @@
-rm(list = ls())
-getwd()
-setwd("/Users/ranee/desktop")
+## By T Luo ##
 library(tidytext)
 library(tidyr)
 library(dplyr)
