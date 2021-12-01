@@ -33,4 +33,6 @@ def process_text_with_tag(text, tags):
 
 
 reviews["adj"] = reviews["text"].apply(process_text_with_tag, tags = "JJ")
+reviews["adj"] = reviews["text"].apply(process_text_with_tag, tags = "NN")
+
 reviews.to_csv("./data/reviews_tokenized.csv")
