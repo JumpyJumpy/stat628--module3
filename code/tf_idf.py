@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 import nltk
 
-trivial_words_list = ["food", "coffee", "place"]
+trivial_words_list = ["food", "everything","creature","onto","return","improvement","house","place","ice","phone","sunday","fashion","experience","groupon","bit","gas","selection","store","info","car","station","everybody","time","area","star","eat","mrs","restaurant","shop","get","enjoy","spot","get","go","hark","school","market","love","section","cm","austin","sweet","rj","cambridge","gourmet","neighborhood","kind","work","order","try","balq","boston","go","course","alex","nemesis","alsace","decatur","head","capital","account","card","bank","super","hair","addition","home","hospital","worth","office","covid","space","sub","subs","favorite","week","village","produce","dragon","hash","quick","party","street","stop","earl","nice","foot"]
 
 
 def tf_idf(text, trivial_words, language = "english"):
