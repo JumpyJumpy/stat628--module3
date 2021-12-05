@@ -2,12 +2,15 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 
-def tfidf(corpus):
-    vectorizer = CountVectorizer(min_df=20)
-    transformer = TfidfTransformer()
-    tfidf = transformer.fit_transform(vectorizer.fit_transform(corpus))
-    word = vectorizer.get_feature_names()
-    weight = tfidf.toarray().sum(axis=0)
 
-    tfidf_Ser = pd.Series(weight, index=word).sort_values(ascending=False)
-    return tfidf_Ser
+def tf_idf(text):
+    vectorizer = CountVectorizer(min_df = 20)
+    frequency_matrix = TfidfTransformer().fit_transform(vectorizer.fit_transform(text))
+    features = vectorizer.get_feature_names()
+    frequency_array = frequency_matrix.toarray().sum(axis = 0)
+
+    words = pd.Series(frequency_array, index = features).sort_values(ascending = False)
+    return words
+
+
+reviews = pd.read_csv("./data/reviews_tokenized.csv", index_col = 0)
