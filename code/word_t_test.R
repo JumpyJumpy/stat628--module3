@@ -49,6 +49,5 @@ for (id in business_id) {
     }
 
     suggestions[suggestions$business_id == id, 2:7] <- c(top1, top2, label1, label2, sugg1, sugg2)
-    break
 }
 
