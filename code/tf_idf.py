@@ -23,7 +23,7 @@ def tf_idf(text, words, language = "english"):
     stop_words = stopwords.words(language)
     vectorizer = CountVectorizer(stop_words = stop_words)
     frequency_matrix = TfidfTransformer().fit_transform(vectorizer.fit_transform(text))
-    features = vectorizer.get_feature_names()
+    features = vectorizer.get_feature_names_out()
     frequency_array = frequency_matrix.toarray().sum(axis = 0)
 
     tags = nltk.pos_tag(features)
