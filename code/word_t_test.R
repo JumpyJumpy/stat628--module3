@@ -58,4 +58,4 @@ for (id in business_id) {
 
 }
 
-write.csv("./data/suggestions.csv")
+write.csv(suggestions, "./data/suggestions.csv")
