@@ -46,7 +46,6 @@ for (id in business_id) {
     } else {
         sugg2 <- NA
         label2 <- NA
-
     }
 
     suggestions[suggestions$business_id == id, 2:7] <- c(top1, top2, label1, label2, sugg1, sugg2)
