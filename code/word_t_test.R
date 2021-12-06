@@ -19,7 +19,7 @@ for (id in business_id) {
         label1 <- label$Kind[label$Var1 == top1]
         top1_test <- t.test(x = top1_stars, y = reviews_selected$stars, alternative = "less")
 
-        if (top1_test$p.value < 0.05) {
+        if (top1_test$p.value < 0.1) {
             sugg1 <- paste0("You should improve the quality of ", label1, ", specifically in ",
                             top1, ".\nBecause comments related to ", top1,
                             "is statistically lower than your average ratings")
@@ -38,7 +38,7 @@ for (id in business_id) {
         label2 <- label$Kind[label$Var1 == top2]
         top2_test <- t.test(x = top2_stars, y = reviews_selected$stars, alternative = "less")
 
-        if (top2_test$p.value < 0.05) {
+        if (top2_test$p.value < 0.1) {
             sugg2 <- paste0("You should improve the quality of ", label2, ", specifically in ",
                             top2, ".\nBecause comments related to ", top2,
                             "is statistically lower than your average ratings")

@@ -20,8 +20,8 @@ Because comments related to serviceis not statistically lower than your average 
 "7","GZgOQOlFVLgNMHBBjspHRw","wine","beer","food","food","You are doing well in food, specifically in wine.
 Because comments related to wineis not statistically lower than your average ratings","You are doing well in food, specifically in beer.
 Because comments related to beeris not statistically lower than your average ratings","4.34883720930233"
-"8","J44x_m383C2GWtzj6xG1HA","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
+"8","J44x_m383C2GWtzj6xG1HA","service","chicken","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","3.03030303030303"
 "9","5P3b82EqZqR7lCqAYj-zaQ","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
@@ -45,8 +45,8 @@ Because comments related to dinneris not statistically lower than your average r
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.91282051282051"
 "16","X3bKIX-3uk9970bNst49tA","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.0453488372093"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.0453488372093"
 "17","pNeu6UYHCFj3lTB-rznDgg","music","service","environment","service","You are doing well in environment, specifically in music.
 Because comments related to musicis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","2.92"
@@ -114,8 +114,8 @@ Because comments related to sandwichis not statistically lower than your average
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.0748031496063"
 "39","Z7el8tD1s7WF7p9J_D6BQg","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.73529411764706"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.73529411764706"
 "40","Hf32W0LKC5lJZ1U0ADIC-w","chocolate","taste","food","food","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","You are doing well in food, specifically in taste.
 Because comments related to tasteis not statistically lower than your average ratings","4.31372549019608"
@@ -167,8 +167,8 @@ Because comments related to coffeeis not statistically lower than your average r
 "56","3GAYrC3z_XaNP2k8qJP-lg","service","wine",NA,"food",NA,"You are doing well in food, specifically in wine.
 Because comments related to wineis not statistically lower than your average ratings","3.94117647058824"
 "57","5khcOme3msVtnlB2ATY7IQ","service","bread","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in bread.
-Because comments related to breadis not statistically lower than your average ratings","3.48484848484848"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in bread.
+Because comments related to breadis statistically lower than your average ratings","3.48484848484848"
 "58","D8wLWZiMlw12B2ftoQAm3Q","service","sandwich","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings","3.43548387096774"
@@ -223,8 +223,8 @@ Because comments related to waffleis not statistically lower than your average r
 "75","MmbmSc77aPWqHLeVwi-v6g","chocolate","coffee","food","food","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.89893617021277"
-"76","MJI4pN34QTHfhblwzd3b5w","chicken","lunch","food","food","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","You are doing well in food, specifically in lunch.
+"76","MJI4pN34QTHfhblwzd3b5w","chicken","lunch","food","food","You should improve the quality of food, specifically in chicken.
+Because comments related to chickenis statistically lower than your average ratings","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","4"
 "77","uC6o9LwG3ejw4RTJjMtFVg","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
@@ -248,11 +248,11 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","4.14285714285714"
 "84","Mg9U8HWnyPw-Z6XjtWAjWQ","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","3.50632911392405"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in chicken.
+Because comments related to chickenis statistically lower than your average ratings","3.50632911392405"
 "85","BqOSfSmwWDZzjYzIrBhyNw","brunch","service","food","service","You are doing well in food, specifically in brunch.
-Because comments related to brunchis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.88065843621399"
+Because comments related to brunchis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.88065843621399"
 "86","1gdxoCW21a-dkhHKb3PeCA","coffee","chocolate","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","3.54545454545455"
@@ -428,8 +428,8 @@ Because comments related to serviceis not statistically lower than your average 
 "145","F_NeRgaOHesahdSe2AKs7Q","burger","tea","food","food","You are doing well in food, specifically in burger.
 Because comments related to burgeris not statistically lower than your average ratings","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","4.18181818181818"
-"146","2trWtHH6UCCqP8FIfnoYig","delivery","pizza","service","food","You are doing well in service, specifically in delivery.
-Because comments related to deliveryis not statistically lower than your average ratings","You are doing well in food, specifically in pizza.
+"146","2trWtHH6UCCqP8FIfnoYig","delivery","pizza","service","food","You should improve the quality of service, specifically in delivery.
+Because comments related to deliveryis statistically lower than your average ratings","You are doing well in food, specifically in pizza.
 Because comments related to pizzais not statistically lower than your average ratings","3.27586206896552"
 "147","CGM2xjTNp4DsJTE6x7uQvQ","chicken","park","food","environment","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","You are doing well in environment, specifically in park.
@@ -443,8 +443,8 @@ Because comments related to coffeeis not statistically lower than your average r
 "150","CDs00iscBthgDr3Uk0iluA","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.07317073170732"
-"151","SRHQEF2-VPS_dl1_ZDH0gA","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
+"151","SRHQEF2-VPS_dl1_ZDH0gA","service","chicken","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","3.42857142857143"
 "152","f5vqPrRhIOzt91gmnnZ82A","lunch","breakfast","food","food","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
@@ -605,8 +605,8 @@ Because comments related to coffeeis not statistically lower than your average r
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in milk.
 Because comments related to milkis not statistically lower than your average ratings","4.9"
 "208","tTWBiaSb2OFJuEbT_9bXDg","tea","milk","food","food","You are doing well in food, specifically in tea.
-Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in milk.
-Because comments related to milkis not statistically lower than your average ratings","4.25"
+Because comments related to teais not statistically lower than your average ratings","You should improve the quality of food, specifically in milk.
+Because comments related to milkis statistically lower than your average ratings","4.25"
 "209","0qaWPaaVOcyVDBaQVgLzgw","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.48"
@@ -730,8 +730,8 @@ Because comments related to soupis not statistically lower than your average rat
 "258","io3HEIZSrMh5RlGqUE4nxQ","toast","tea","food","food","You are doing well in food, specifically in toast.
 Because comments related to toastis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","2.875"
-"259","WOx1QtnKQ0vleNSk7wwvMw","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
+"259","WOx1QtnKQ0vleNSk7wwvMw","coffee","service","food","service","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.27272727272727"
 "260","pCg4oRweZQnoXo2j7_-BqQ","room","staff","environment",NA,"You are doing well in environment, specifically in room.
 Because comments related to roomis not statistically lower than your average ratings",NA,"4.61538461538461"
@@ -865,13 +865,13 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
 Because comments related to latteis not statistically lower than your average ratings","3.91525423728814"
 "314","t-UaulQ_HOh2dt144UzawQ","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","4.38730853391685"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in chicken.
+Because comments related to chickenis statistically lower than your average ratings","4.38730853391685"
 "315","ICp9SjFTnQzMSdB8w-GCQQ","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.21276595744681"
-"316","cAbAzXoChKsZ67ubMhHLYg","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
+"316","cAbAzXoChKsZ67ubMhHLYg","service","chicken","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","4.0463768115942"
 "317","DmeNxtgASzdsMmWOLeB4Qw","cream","flavor","food","food","You are doing well in food, specifically in cream.
 Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in flavor.
@@ -883,8 +883,8 @@ Because comments related to menuis not statistically lower than your average rat
 Because comments related to chickenis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.92857142857143"
 "320","e4CjMQOnUT4JxuS7PPm0Cw","lunch","chicken","food","food","You are doing well in food, specifically in lunch.
-Because comments related to lunchis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","3.61240310077519"
+Because comments related to lunchis not statistically lower than your average ratings","You should improve the quality of food, specifically in chicken.
+Because comments related to chickenis statistically lower than your average ratings","3.61240310077519"
 "321","kHOI8apECknxdVDbG-foPg","pizza","service","food","service","You are doing well in food, specifically in pizza.
 Because comments related to pizzais not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.62536023054755"
@@ -924,8 +924,8 @@ Because comments related to cakeis not statistically lower than your average rat
 "333","f_ai2cN16gH6kbLKkkaqsw","chicken","rice","food","food","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","4.14432989690722"
-"334","uek3MhwdARiX7lC0L875iA","service","staff","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"334","uek3MhwdARiX7lC0L875iA","service","staff","service","service","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","2.92857142857143"
 "335","WHW-1wReoJq43UOiBVBCPw","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
@@ -982,8 +982,8 @@ Because comments related to lunchis not statistically lower than your average ra
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.90533562822719"
 "353","tIJp2BCnm5etGw_ya5Zcgw","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.02564102564103"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.02564102564103"
 "354","GTj0GfyqMCZdwKtlFa7JfQ","tea","waffle","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in waffle.
 Because comments related to waffleis not statistically lower than your average ratings","3.54098360655738"
@@ -1052,15 +1052,15 @@ Because comments related to serviceis not statistically lower than your average 
 "376","Czn5SlX5ZIimcyqAe245Ew","coffee","sandwich","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings","4.575"
-"377","821wfkFiKq3y-AhB2mvB8A","service","chocolate","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
+"377","821wfkFiKq3y-AhB2mvB8A","service","chocolate","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","4.15178571428571"
 "378","8WB2IAgVVDeTPbgR_QJJIQ","service","price","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in price.
 Because comments related to priceis not statistically lower than your average ratings","3.5"
 "379","9fOJxRpRgObO_hsaySDc2w","service","pork","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in pork.
-Because comments related to porkis not statistically lower than your average ratings","3.64591439688716"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in pork.
+Because comments related to porkis statistically lower than your average ratings","3.64591439688716"
 "380","xn5aKh1I4U4iHtIoNeZk4A","lunch","flavor","food","food","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in food, specifically in flavor.
 Because comments related to flavoris not statistically lower than your average ratings","4.63917525773196"
@@ -1127,8 +1127,8 @@ Because comments related to breakfastis not statistically lower than your averag
 "401","xEwVqr0h7fYh966oFrDtDg","coffee","tea","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","4.08029197080292"
-"402","jMghloFAxvE9KZjcmxK1cg","service","breakfast","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
+"402","jMghloFAxvE9KZjcmxK1cg","service","breakfast","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.59437751004016"
 "403","zWKN-Qgc7r1CMJuWr_6F4g","service","wine","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in wine.
@@ -1280,8 +1280,8 @@ Because comments related to sandwichis not statistically lower than your average
 "453","UM0tWldM4_ZkRKHaAI8xeg","brunch","menu","food","food","You are doing well in food, specifically in brunch.
 Because comments related to brunchis not statistically lower than your average ratings","You are doing well in food, specifically in menu.
 Because comments related to menuis not statistically lower than your average ratings","3.88888888888889"
-"454","T13JrL10-6RVS7L-HeJjoQ","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
+"454","T13JrL10-6RVS7L-HeJjoQ","breakfast","service","food","service","You should improve the quality of food, specifically in breakfast.
+Because comments related to breakfastis statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.13861386138614"
 "455","l_XFoR5Ancgy6IcPzFinXg","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
@@ -1311,9 +1311,9 @@ Because comments related to locationis not statistically lower than your average
 "464","e2xSzZBs6IdKc0-kFN_pmg","coffee","service","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.5"
-"465","Dr2wktcqcbJtTLur6l9qRA","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.29411764705882"
+"465","Dr2wktcqcbJtTLur6l9qRA","coffee","service","food","service","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.29411764705882"
 "466","V4IVKUvBPWae1R8t2fqewQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.256"
@@ -1420,8 +1420,8 @@ Because comments related to staffis not statistically lower than your average ra
 Because comments related to menuis not statistically lower than your average ratings","You are doing well in food, specifically in bowl.
 Because comments related to bowlis not statistically lower than your average ratings","3.44"
 "503","9zQCeb1rEJOuHexHXPR2BQ","menu","cheese","food","food","You are doing well in food, specifically in menu.
-Because comments related to menuis not statistically lower than your average ratings","You are doing well in food, specifically in cheese.
-Because comments related to cheeseis not statistically lower than your average ratings","3.25"
+Because comments related to menuis not statistically lower than your average ratings","You should improve the quality of food, specifically in cheese.
+Because comments related to cheeseis statistically lower than your average ratings","3.25"
 "504","KFS2fEwq5nnsaFJkNtCNiw","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.75"
@@ -1474,8 +1474,8 @@ Because comments related to chocolateis not statistically lower than your averag
 "523","hI0hpGXkL1itKDbKt12zeg","coffee","latte","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.11111111111111"
 "524","2NBbqU9WPGjbVzBn07yzmg","bowl","taste","food","food","You are doing well in food, specifically in bowl.
-Because comments related to bowlis not statistically lower than your average ratings","You are doing well in food, specifically in taste.
-Because comments related to tasteis not statistically lower than your average ratings","3.35714285714286"
+Because comments related to bowlis not statistically lower than your average ratings","You should improve the quality of food, specifically in taste.
+Because comments related to tasteis statistically lower than your average ratings","3.35714285714286"
 "525","t-PClzCSkBpYR9S9tNZ0HQ","coffee","service","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.6"
@@ -1741,8 +1741,8 @@ Because comments related to menuis not statistically lower than your average rat
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in soup.
 Because comments related to soupis not statistically lower than your average ratings","3.9520295202952"
 "628","bklkuTKMAWuKrKTZ36Ph-w","menu","dinner","food","food","You are doing well in food, specifically in menu.
-Because comments related to menuis not statistically lower than your average ratings","You are doing well in food, specifically in dinner.
-Because comments related to dinneris not statistically lower than your average ratings","2.1"
+Because comments related to menuis not statistically lower than your average ratings","You should improve the quality of food, specifically in dinner.
+Because comments related to dinneris statistically lower than your average ratings","2.1"
 "629","PFppNi9rZWAw5f8e5J41MQ","coffee","tea","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","3.88081149619611"
@@ -1800,8 +1800,8 @@ Because comments related to staffis not statistically lower than your average ra
 "647","un0zmaEL7X552zXQ6ZaCWA","staff","service","service","service","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4"
-"648","X0z6FAw48MIXuo6uhuwJQw","brunch","service","food","service","You are doing well in food, specifically in brunch.
-Because comments related to brunchis not statistically lower than your average ratings","You are doing well in service, specifically in service.
+"648","X0z6FAw48MIXuo6uhuwJQw","brunch","service","food","service","You should improve the quality of food, specifically in brunch.
+Because comments related to brunchis statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.15962441314554"
 "649","y9fNR400n2VJw3FSPbyIOA","coffee","service","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.14285714285714"
@@ -1823,8 +1823,8 @@ Because comments related to serviceis not statistically lower than your average 
 "655","dDvgEm3PCCEiRfmxlufOmA","rice","chicken","food","food","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","3.51612903225806"
-"656","5NsdznaNSUmH2O0vuo65Pw","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
+"656","5NsdznaNSUmH2O0vuo65Pw","service","chicken","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","4.63888888888889"
 "657","6x-F479iB8AH6ngt94hlEA","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
@@ -1914,16 +1914,16 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","3.40972222222222"
 "686","MFGW3bSC1xdoAPavptVP_w","coffee","latte","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
-Because comments related to latteis not statistically lower than your average ratings","4.35526315789474"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of food, specifically in latte.
+Because comments related to latteis statistically lower than your average ratings","4.35526315789474"
 "687","T13YSWXX43N3ng-Uo3YHAA","rice","sauce","food","food","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","You are doing well in food, specifically in sauce.
 Because comments related to sauceis not statistically lower than your average ratings","3.91919191919192"
 "688","V2MqBu1-l3PNISA2BkvLSw","pizza","delivery","food","service","You are doing well in food, specifically in pizza.
 Because comments related to pizzais not statistically lower than your average ratings","You are doing well in service, specifically in delivery.
 Because comments related to deliveryis not statistically lower than your average ratings","3.44230769230769"
-"689","RUlz2QsvsmBnO4FzcS747Q","service","staff","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"689","RUlz2QsvsmBnO4FzcS747Q","service","staff","service","service","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.3"
 "690","Ri3tujeSjfxRP-LB2wcotQ","cheese","sandwich","food","food","You are doing well in food, specifically in cheese.
 Because comments related to cheeseis not statistically lower than your average ratings","You are doing well in food, specifically in sandwich.
@@ -1950,10 +1950,10 @@ Because comments related to chocolateis not statistically lower than your averag
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.5"
 "698","3m9xLM-fPPpOm7eSawj3PQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
-Because comments related to staffis not statistically lower than your average ratings","3.5"
-"699","v4_XjuxcnEaztoN9KxzFbA","coffee","waffle","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in waffle.
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in staff.
+Because comments related to staffis statistically lower than your average ratings","3.5"
+"699","v4_XjuxcnEaztoN9KxzFbA","coffee","waffle","food","food","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in food, specifically in waffle.
 Because comments related to waffleis not statistically lower than your average ratings","4.55"
 "700","CWDbvfGEY2cKfDqTF36XuA","cream","tea","food","food","You are doing well in food, specifically in cream.
 Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
@@ -2218,8 +2218,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to riceis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.26470588235294"
 "790","QuuwB5oonYd---NfIm_mZw","coffee","location","food","environment","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in environment, specifically in location.
-Because comments related to locationis not statistically lower than your average ratings","1.82352941176471"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of environment, specifically in location.
+Because comments related to locationis statistically lower than your average ratings","1.82352941176471"
 "791","dD5XHGoIIp3Dr1vaTVeHEA","rice","pork","food","food","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","You are doing well in food, specifically in pork.
 Because comments related to porkis not statistically lower than your average ratings","3.5"
@@ -2402,8 +2402,8 @@ Because comments related to lunchis not statistically lower than your average ra
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.57142857142857"
 "857","pknFDkHBEYerI5SX4hV0yg","chicken","quality","food",NA,"You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings",NA,"4.18181818181818"
-"858","IfA6BPVQ8993eB8b1wPUdg","service","breakfast","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
+"858","IfA6BPVQ8993eB8b1wPUdg","service","breakfast","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.15151515151515"
 "859","0HHfw-DWoQkrFRkz6WcvyA","coffee","beer","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in beer.
@@ -2554,8 +2554,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.5"
 "919","tUXQc9v1tZ5SWSCgkBMMAA","coffee","service",NA,NA,NA,NA,"4.83333333333333"
 "920","8Stk7-zM-6ZhilqaXDLbHg","service","staff","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
-Because comments related to staffis not statistically lower than your average ratings","4.20833333333333"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of service, specifically in staff.
+Because comments related to staffis statistically lower than your average ratings","4.20833333333333"
 "921","GY1rvd33ciR1Nn4LRDFkXw","music","beer","environment","food","You are doing well in environment, specifically in music.
 Because comments related to musicis not statistically lower than your average ratings","You are doing well in food, specifically in beer.
 Because comments related to beeris not statistically lower than your average ratings","3.09433962264151"
@@ -2566,8 +2566,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.92887029288703"
 "924","qBZPjvQ5nkvZofauspi42w","coffee","staff","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
-Because comments related to staffis not statistically lower than your average ratings","3.97176470588235"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in staff.
+Because comments related to staffis statistically lower than your average ratings","3.97176470588235"
 "925","lbDumHm4Ot7aa8cSuzwwUA","pizza","service","food","service","You are doing well in food, specifically in pizza.
 Because comments related to pizzais not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.64814814814815"
@@ -2677,8 +2677,8 @@ Because comments related to musicis not statistically lower than your average ra
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.34351145038168"
 "961","kYyP_0BC0KBJ-fKNSb4D3A","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.72474747474747"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.72474747474747"
 "962","sOuvngCMHVZPxdrpJ40KFg","coffee","chocolate","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","4.08823529411765"
@@ -2818,8 +2818,8 @@ Because comments related to creamis not statistically lower than your average ra
 "1008","6x_pqM4U0guRf3Q-fXrosw","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","4.29470198675497"
-"1009","FFh6KJhURc9oMEA5M-TdcA","service","staff","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"1009","FFh6KJhURc9oMEA5M-TdcA","service","staff","service","service","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.62162162162162"
 "1010","QoLCSgHR35nUauHGGgL9zQ","service","chicken","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
@@ -2888,8 +2888,8 @@ Because comments related to bowlis not statistically lower than your average rat
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.61111111111111"
 "1032","ekRtcDigaJm7TaaNXydyqw","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.46511627906977"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.46511627906977"
 "1033","nTwjVARtmNgoway9R51_ZQ","coffee","chocolate","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","3.63793103448276"
@@ -2946,8 +2946,8 @@ Because comments related to serviceis not statistically lower than your average 
 "1052","HPL1_7KCU_B0cEnoGGk1Fg","service","bagel","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in bagel.
 Because comments related to bagelis not statistically lower than your average ratings","2.17647058823529"
-"1053","weY8Q8j-VbGrVbK9QUF3kg","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
+"1053","weY8Q8j-VbGrVbK9QUF3kg","coffee","breakfast","food","food","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.46153846153846"
 "1054","bx-fJG_Usk8PUj32BLWMFQ","service","waitress","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in waitress.
@@ -3192,8 +3192,8 @@ Because comments related to chickenis not statistically lower than your average 
 "1141","KFv6EFUqrf-0ZQd5DVdApA","tea","milk","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in milk.
 Because comments related to milkis not statistically lower than your average ratings","2.94117647058824"
-"1142","Z-8uKkHEZsNu_6oHSK1fcw","meal","burger","food","food","You are doing well in food, specifically in meal.
-Because comments related to mealis not statistically lower than your average ratings","You are doing well in food, specifically in burger.
+"1142","Z-8uKkHEZsNu_6oHSK1fcw","meal","burger","food","food","You should improve the quality of food, specifically in meal.
+Because comments related to mealis statistically lower than your average ratings","You are doing well in food, specifically in burger.
 Because comments related to burgeris not statistically lower than your average ratings","3"
 "1143","cJEzd3rtlu9OuKqc6BT4eg","pork","sauce","food","food","You are doing well in food, specifically in pork.
 Because comments related to porkis not statistically lower than your average ratings","You are doing well in food, specifically in sauce.
@@ -3369,8 +3369,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.75609756097561"
 "1212","--6COJIAjkQwSUZci_4PJQ","tea","service","food","service","You are doing well in food, specifically in tea.
-Because comments related to teais not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.1078431372549"
+Because comments related to teais not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.1078431372549"
 "1213","Y-JSxnOxcY-uCzLYXIvs8w","bowl","service","food","service","You are doing well in food, specifically in bowl.
 Because comments related to bowlis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
 Because comments related to serviceis statistically lower than your average ratings","3.76585365853659"
@@ -3466,12 +3466,12 @@ Because comments related to serviceis statistically lower than your average rati
 "1244","MJwvr5M3yfhYUwteTx81ow","tea","cream","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in cream.
 Because comments related to creamis not statistically lower than your average ratings","2"
-"1245","57UOLFG1dRniuge8gsVh-A","service","beer","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in beer.
+"1245","57UOLFG1dRniuge8gsVh-A","service","beer","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in beer.
 Because comments related to beeris not statistically lower than your average ratings","4.21830985915493"
 "1246","57qwYT5VpJeSyi-zzumSwg","hour","service","service","service","You are doing well in service, specifically in hour.
-Because comments related to houris not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","2.97844827586207"
+Because comments related to houris not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","2.97844827586207"
 "1247","_o4eCCseSJDd4fJjG1TV8A","coffee","latte","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
 Because comments related to latteis not statistically lower than your average ratings","4.6"
@@ -3623,8 +3623,8 @@ Because comments related to staffis not statistically lower than your average ra
 "1297","qGU-jJF0f9Nn1F8iSFNSSg","room","coffee","environment","food","You are doing well in environment, specifically in room.
 Because comments related to roomis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.73657289002558"
-"1298","V-SmpIeLq-6VavwxiJIcnQ","service","meal","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in meal.
+"1298","V-SmpIeLq-6VavwxiJIcnQ","service","meal","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in meal.
 Because comments related to mealis not statistically lower than your average ratings","4.5"
 "1299","J1LsQDKFIl70x7OWPO-esg","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
@@ -3888,8 +3888,8 @@ Because comments related to chickenis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.6"
 "1387","LRrUIf-I4p9R7f36YCHODQ","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.87058823529412"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.87058823529412"
 "1388","fLeUPf-Th0dx6QaWy_a6vQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.18421052631579"
@@ -4016,8 +4016,8 @@ Because comments related to breakfastis not statistically lower than your averag
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
 Because comments related to latteis not statistically lower than your average ratings","4"
 "1432","uNo3yvlSl7hg6w-s0LnfFg","coffee","staff","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
-Because comments related to staffis not statistically lower than your average ratings","4.26548672566372"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in staff.
+Because comments related to staffis statistically lower than your average ratings","4.26548672566372"
 "1433","G9Bl8Z3GhqM7HB2ux2PgGA","coffee","latte","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
 Because comments related to latteis not statistically lower than your average ratings","2.76190476190476"
@@ -4228,8 +4228,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in salad.
 Because comments related to saladis not statistically lower than your average ratings","3.5"
 "1515","WqaWBxfZNTKSJfoOEHynyA","price","soup","food","food","You are doing well in food, specifically in price.
-Because comments related to priceis not statistically lower than your average ratings","You are doing well in food, specifically in soup.
-Because comments related to soupis not statistically lower than your average ratings","4.125"
+Because comments related to priceis not statistically lower than your average ratings","You should improve the quality of food, specifically in soup.
+Because comments related to soupis statistically lower than your average ratings","4.125"
 "1516","sbdSopoAyynDWbMOSvZzVA","tea","coffee","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","4.06666666666667"
@@ -4340,8 +4340,8 @@ Because comments related to serviceis not statistically lower than your average 
 "1557","hmrRb7qX3K705MuxHHfgNA","coffee","service","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
 Because comments related to serviceis statistically lower than your average ratings","3.61916878710772"
-"1558","N8bkqAHarq_aAvpiPo1fOg","service","location","service","environment","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in location.
+"1558","N8bkqAHarq_aAvpiPo1fOg","service","location","service","environment","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in environment, specifically in location.
 Because comments related to locationis not statistically lower than your average ratings","3.51219512195122"
 "1559","XM6Lh_Y1waWgj2V294Y8qA","coffee","service","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
@@ -4399,8 +4399,8 @@ Because comments related to breakfastis not statistically lower than your averag
 "1577","W7VsbLdfz0yDsO99DzxeaQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.24074074074074"
-"1578","754pXVsGe6P-9pfyTocv_Q","coffee","egg","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in egg.
+"1578","754pXVsGe6P-9pfyTocv_Q","coffee","egg","food","food","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in food, specifically in egg.
 Because comments related to eggis not statistically lower than your average ratings","4.33333333333333"
 "1579","bBUOH6flhpjaO57lo0F1Mw","tea","service","food","service","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in service, specifically in service.
@@ -4490,8 +4490,8 @@ Because comments related to sandwichis not statistically lower than your average
 Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of food, specifically in bagel.
 Because comments related to bagelis statistically lower than your average ratings","3.8125"
 "1608","T0wbUlb9pjmBy1Ep6VUd3Q","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.38888888888889"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.38888888888889"
 "1609","UbB4mfZrwvkF5BX-wuJr7A","lunch","service","food","service","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3"
@@ -4525,8 +4525,8 @@ Because comments related to dinneris not statistically lower than your average r
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.75342465753425"
 "1620","wzbOW1qG47ut4les3La0Ag","service","location","service","environment","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in location.
-Because comments related to locationis not statistically lower than your average ratings","3.609375"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of environment, specifically in location.
+Because comments related to locationis statistically lower than your average ratings","3.609375"
 "1621","7TLQNAvJUIDrIdI0x25qNg","lunch","staff","food","service","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.96648044692737"
@@ -4540,8 +4540,8 @@ Because comments related to breakfastis not statistically lower than your averag
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.2"
 "1625","JmyyYki9NlQtjcc6hE2JEA","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.81739130434783"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.81739130434783"
 "1626","GcBv6w-KmHWK1-i7RnQzeg","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.64285714285714"
@@ -4640,8 +4640,8 @@ Because comments related to serviceis not statistically lower than your average 
 "1658","_BbODcinangkwNvVwpvfuA","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.08354114713217"
-"1659","t7mMoNsNX0DSRFVnbHIRcA","beef","rice","food","food","You are doing well in food, specifically in beef.
-Because comments related to beefis not statistically lower than your average ratings","You are doing well in food, specifically in rice.
+"1659","t7mMoNsNX0DSRFVnbHIRcA","beef","rice","food","food","You should improve the quality of food, specifically in beef.
+Because comments related to beefis statistically lower than your average ratings","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","3.97619047619048"
 "1660","tZJHpUvzQA9kAYCqqFbZoQ","brunch","menu","food","food","You are doing well in food, specifically in brunch.
 Because comments related to brunchis not statistically lower than your average ratings","You are doing well in food, specifically in menu.
@@ -4693,20 +4693,20 @@ Because comments related to staffis not statistically lower than your average ra
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in environment, specifically in family.
 Because comments related to familyis not statistically lower than your average ratings","3.95"
 "1677","JcSxGNaqM0Nsk9jMo0M6Bg","bagel","cream","food","food","You are doing well in food, specifically in bagel.
-Because comments related to bagelis not statistically lower than your average ratings","You are doing well in food, specifically in cream.
-Because comments related to creamis not statistically lower than your average ratings","3.75555555555556"
+Because comments related to bagelis not statistically lower than your average ratings","You should improve the quality of food, specifically in cream.
+Because comments related to creamis statistically lower than your average ratings","3.75555555555556"
 "1678","6X62fJ8aTUiwJCqNKWA8lw","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.1219512195122"
 "1679","kuj7LCZrIPd0lgkApHYIXQ","wine","service","food","service","You are doing well in food, specifically in wine.
 Because comments related to wineis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.10204081632653"
-"1680","Et22UeyAOiDyHhxxwiSchA","service","bowl","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in bowl.
+"1680","Et22UeyAOiDyHhxxwiSchA","service","bowl","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in bowl.
 Because comments related to bowlis not statistically lower than your average ratings","3.85981308411215"
 "1681","adlpvpLnmO6kRsMEvq3Dzw","chocolate","service","food","service","You are doing well in food, specifically in chocolate.
-Because comments related to chocolateis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","2.81818181818182"
+Because comments related to chocolateis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","2.81818181818182"
 "1682","qR5ip_g1EgN7iG43dlokxA","coffee","bagel","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in bagel.
 Because comments related to bagelis not statistically lower than your average ratings","3.28571428571429"
@@ -5074,8 +5074,8 @@ Because comments related to riceis not statistically lower than your average rat
 Because comments related to beeris not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.77551020408163"
 "1820","ykdqm3IOFeL1g4lOk_EQQw","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.28282828282828"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.28282828282828"
 "1821","DOmaxLcwoKfNLNGkCciOHQ","coffee","breakfast",NA,NA,NA,NA,"4.98333333333333"
 "1822","LNJIUbU6bKOYBreQGGd0Rg","service","coffee","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
@@ -5249,11 +5249,11 @@ Because comments related to serviceis not statistically lower than your average 
 "1884","Tu3mLJG5Ws_-ujVAJxG8AQ","dinner","service","food","service","You are doing well in food, specifically in dinner.
 Because comments related to dinneris not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.09022556390977"
-"1885","HrkYYoBlre9cVqX7Qxg_EA","service","hour","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in hour.
-Because comments related to houris not statistically lower than your average ratings","2.59375"
-"1886","5AMRyPP3h4WNJGOwH0G5vA","service","cheese","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in cheese.
+"1885","HrkYYoBlre9cVqX7Qxg_EA","service","hour","service","service","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You should improve the quality of service, specifically in hour.
+Because comments related to houris statistically lower than your average ratings","2.59375"
+"1886","5AMRyPP3h4WNJGOwH0G5vA","service","cheese","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in cheese.
 Because comments related to cheeseis not statistically lower than your average ratings","3.63934426229508"
 "1887","szqma4QibwpVaA9fsE8soQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
@@ -5282,8 +5282,8 @@ Because comments related to serviceis statistically lower than your average rati
 "1895","X-gfdg_O3b9Z88QSyh-fig","service","staff","service","service","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.13100436681223"
-"1896","7MTK1nzefMtcsz8eM2XYdg","service","location","service","environment","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in location.
+"1896","7MTK1nzefMtcsz8eM2XYdg","service","location","service","environment","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in environment, specifically in location.
 Because comments related to locationis not statistically lower than your average ratings","3.69029850746269"
 "1897","p6zOGfwWSUm7_i-Z3s1rQg","staff","clean","service","environment","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","You are doing well in environment, specifically in clean.
@@ -5352,8 +5352,8 @@ Because comments related to soupis not statistically lower than your average rat
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in bread.
 Because comments related to breadis not statistically lower than your average ratings","3.47222222222222"
 "1919","K7zTIsNIyOUU9bQ_dlOJsQ","service","pork","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in pork.
-Because comments related to porkis not statistically lower than your average ratings","4.24290780141844"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in pork.
+Because comments related to porkis statistically lower than your average ratings","4.24290780141844"
 "1920","0_1g3DSi_dg8qDBXl0UYYA","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.34408602150538"
@@ -5459,8 +5459,8 @@ Because comments related to staffis not statistically lower than your average ra
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.91679273827534"
 "1955","aRoBCCk2NlMrzQ7XJN8OuQ","room","service","environment","service","You are doing well in environment, specifically in room.
-Because comments related to roomis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","2.79661016949153"
+Because comments related to roomis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","2.79661016949153"
 "1956","waB3QfjVjaS3MC9OUwcTeg","service","music","service","environment","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in music.
 Because comments related to musicis not statistically lower than your average ratings","2.94117647058824"
@@ -5577,8 +5577,8 @@ Because comments related to chickenis not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","3.32394366197183"
 "1995","5q8oA3Zx9SxGmElGK8fHpA","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","4.16666666666667"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","4.16666666666667"
 "1996","JhnIQa0_mWbYsntdrST31A","pork","rice","food","food","You are doing well in food, specifically in pork.
 Because comments related to porkis not statistically lower than your average ratings","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","3.81395348837209"
@@ -5664,8 +5664,8 @@ Because comments related to bagelis not statistically lower than your average ra
 Because comments related to bagelis not statistically lower than your average ratings","You are doing well in food, specifically in cheese.
 Because comments related to cheeseis not statistically lower than your average ratings","4.19354838709677"
 "2027","OzzvibYqhw81r0TedWjllA","lunch","burger","food","food","You are doing well in food, specifically in lunch.
-Because comments related to lunchis not statistically lower than your average ratings","You are doing well in food, specifically in burger.
-Because comments related to burgeris not statistically lower than your average ratings","3.76190476190476"
+Because comments related to lunchis not statistically lower than your average ratings","You should improve the quality of food, specifically in burger.
+Because comments related to burgeris statistically lower than your average ratings","3.76190476190476"
 "2028","mW8TcXlgxtxmx3fr_g3Rkg","smoothie","service","food","service","You are doing well in food, specifically in smoothie.
 Because comments related to smoothieis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4"
@@ -5783,8 +5783,8 @@ Because comments related to brunchis not statistically lower than your average r
 "2072","zyqTwxZNNguQL3YjMx-4Fw","smoothie","service","food","service","You are doing well in food, specifically in smoothie.
 Because comments related to smoothieis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.53846153846154"
-"2073","Dy_ag8G_QIiioHRLCNFItQ","service","breakfast","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
+"2073","Dy_ag8G_QIiioHRLCNFItQ","service","breakfast","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","2.9375"
 "2074","9VTYZ1f0peEDuZCVUFV_eQ","coffee","quality","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.875"
@@ -5855,8 +5855,8 @@ Because comments related to creamis not statistically lower than your average ra
 Because comments related to creamis statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.46078431372549"
 "2101","PNH0hmLvsy8S6mhutcDNKg","chicken","service","food","service","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.1047619047619"
+Because comments related to chickenis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.1047619047619"
 "2102","PdSAZ8Z9yGBTZr2_E13cGg","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.58064516129032"
@@ -5932,8 +5932,8 @@ Because comments related to meatis not statistically lower than your average rat
 "2131","1h3PYFnGPU62G6ct_If9-w","cheese","egg","food","food","You are doing well in food, specifically in cheese.
 Because comments related to cheeseis not statistically lower than your average ratings","You are doing well in food, specifically in egg.
 Because comments related to eggis not statistically lower than your average ratings","3.66060606060606"
-"2132","4NtLqqnDPJjeCbrys1zpdw","wait","breakfast","service","food","You are doing well in service, specifically in wait.
-Because comments related to waitis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
+"2132","4NtLqqnDPJjeCbrys1zpdw","wait","breakfast","service","food","You should improve the quality of service, specifically in wait.
+Because comments related to waitis statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","3.85759897828863"
 "2133","a8ZLRx-NyaT1RtcykR2DCA","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
@@ -5987,8 +5987,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.90990990990991"
 "2150","hIdbXv3XTvHXG2pp1kPwZg","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","4.45161290322581"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","4.45161290322581"
 "2151","FkbPZRK4nToSX8K0ymx_vA","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.41904761904762"
@@ -6044,8 +6044,8 @@ Because comments related to breakfastis not statistically lower than your averag
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.48739495798319"
 "2169","oCf2gutEZaLG5-REYP2mOQ","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.75"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.75"
 "2170","LMpZdARWyOILtY_J2ZicyQ","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.94965675057208"
@@ -6118,8 +6118,8 @@ Because comments related to serviceis not statistically lower than your average 
 Because comments related to chickenis not statistically lower than your average ratings","You are doing well in food, specifically in rice.
 Because comments related to riceis not statistically lower than your average ratings","2.85714285714286"
 "2194","kZtRAdoLiIXSrNOee9FvXA","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.50691244239631"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.50691244239631"
 "2195","Y5RDZf-7gSHnt2w0HUb2Tg","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.02803738317757"
@@ -6316,8 +6316,8 @@ Because comments related to porkis not statistically lower than your average rat
 "2260","NpCywdU1jKL0kM54IFGTPQ","sandwich","chicken","food",NA,"You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings",NA,"4.75"
 "2261","KhwJuLYIX0FdLGnCzklszQ","service","chicken","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","3.68518518518519"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in chicken.
+Because comments related to chickenis statistically lower than your average ratings","3.68518518518519"
 "2262","PHWjLi6zpB5f9lkk7BzL5Q","sandwich","coffee","food","food","You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.54545454545455"
@@ -6350,8 +6350,8 @@ Because comments related to staffis not statistically lower than your average ra
 "2272","cJhAH8Rzh3JIz2wAvgVztw","coffee","staff","food","service","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.14285714285714"
-"2273","34vZaPVPHS8Lpk4uCpF9hQ","location","staff","environment","service","You are doing well in environment, specifically in location.
-Because comments related to locationis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"2273","34vZaPVPHS8Lpk4uCpF9hQ","location","staff","environment","service","You should improve the quality of environment, specifically in location.
+Because comments related to locationis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","2.33333333333333"
 "2274","cHd_MH0k0N4cK9xqyN_C8A","coffee","drink","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.75"
@@ -6370,8 +6370,8 @@ Because comments related to sitis not statistically lower than your average rati
 Because comments related to locationis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","2.375"
 "2280","BMppUxpBh3uaDC0ARkkHow","cream","waffle","food","food","You are doing well in food, specifically in cream.
-Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in waffle.
-Because comments related to waffleis not statistically lower than your average ratings","3.4375"
+Because comments related to creamis not statistically lower than your average ratings","You should improve the quality of food, specifically in waffle.
+Because comments related to waffleis statistically lower than your average ratings","3.4375"
 "2281","hidVKxL7xOU8ArNKDa1SWw","tea","drink","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in drink.
 Because comments related to drinkis not statistically lower than your average ratings","4.06060606060606"
@@ -6499,8 +6499,8 @@ Because comments related to serviceis not statistically lower than your average 
 "2323","34w3_VelxsGAItpFuVIrrw","tea","waffle","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in waffle.
 Because comments related to waffleis not statistically lower than your average ratings","3.125"
-"2324","MVJ8srfEKi0feA1hFwQaGA","coffee","lunch","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in lunch.
+"2324","MVJ8srfEKi0feA1hFwQaGA","coffee","lunch","food","food","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","2.45454545454545"
 "2325","kuPWwKlOeRwpQ74RxehzEw","coffee","service",NA,NA,NA,NA,"5"
 "2326","iEW8828ZvXefWYLqzQdsrA","pizza","coffee","food","food","You are doing well in food, specifically in pizza.
@@ -6632,16 +6632,16 @@ Because comments related to serviceis not statistically lower than your average 
 "2374","6mMsOmfzZm6xQ_pdsCphZQ","chicken","cream","food",NA,"You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings",NA,"3"
 "2375","QF0M7gvb92V_wpi7hEdgyA","chicken","breakfast","food","food","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","3.23076923076923"
+Because comments related to chickenis not statistically lower than your average ratings","You should improve the quality of food, specifically in breakfast.
+Because comments related to breakfastis statistically lower than your average ratings","3.23076923076923"
 "2376","RsQsRzFEpBzOWt17K2G3qw","coffee","soup","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.33333333333333"
 "2377","0MTDKD7JAxQRIgEpb5WKPg","coffee","family","food","environment","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in environment, specifically in family.
 Because comments related to familyis not statistically lower than your average ratings","4.9375"
 "2378","aIyygm1QUKeMlrjH8PH5jw","matcha","taste","food","food","You are doing well in food, specifically in matcha.
-Because comments related to matchais not statistically lower than your average ratings","You are doing well in food, specifically in taste.
-Because comments related to tasteis not statistically lower than your average ratings","4.07692307692308"
+Because comments related to matchais not statistically lower than your average ratings","You should improve the quality of food, specifically in taste.
+Because comments related to tasteis statistically lower than your average ratings","4.07692307692308"
 "2379","M9BQrWuXLkeMdmtnCOMGsQ","smoothie","bowl","food","food","You are doing well in food, specifically in smoothie.
 Because comments related to smoothieis not statistically lower than your average ratings","You are doing well in food, specifically in bowl.
 Because comments related to bowlis not statistically lower than your average ratings","4.52380952380952"
@@ -6871,8 +6871,8 @@ Because comments related to staffis statistically lower than your average rating
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.33718244803695"
 "2465","YAzHNX7phCDJ9WGS9Qneug","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
-Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.18367346938776"
+Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.18367346938776"
 "2466","mgHTkAlgjD36RDsOT-SyQQ","breakfast","croissant","food","food","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in croissant.
 Because comments related to croissantis not statistically lower than your average ratings","4.39951573849879"
@@ -6923,8 +6923,8 @@ Because comments related to breakfastis not statistically lower than your averag
 "2482","WpAU80ZdVU_pUVcAcYd4uA","coffee","breakfast","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","4.48245614035088"
-"2483","I2Do6qEKfcA8WjqJhnbq4g","coffee","staff","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"2483","I2Do6qEKfcA8WjqJhnbq4g","coffee","staff","food","service","You should improve the quality of food, specifically in coffee.
+Because comments related to coffeeis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.19047619047619"
 "2484","MwhfSbdHnfjHeqJkEtyw8w","service","staff","service","service","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
@@ -7004,8 +7004,8 @@ Because comments related to creamis not statistically lower than your average ra
 "2509","97xpspCmjgRt4sAy0lTDZA","sandwich","service","food","service","You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","2.17333333333333"
-"2510","xo7g1UhRVROVPBnQCgpULQ","brunch","service","food","service","You are doing well in food, specifically in brunch.
-Because comments related to brunchis not statistically lower than your average ratings","You are doing well in service, specifically in service.
+"2510","xo7g1UhRVROVPBnQCgpULQ","brunch","service","food","service","You should improve the quality of food, specifically in brunch.
+Because comments related to brunchis statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.3495145631068"
 "2511","sJJyx2dNtZcOzNj_W--V3g","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
@@ -7143,15 +7143,15 @@ Because comments related to serviceis not statistically lower than your average 
 "2556","qodaOBGbbqIN2_muU5OCyg","coffee","latte","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
 Because comments related to latteis not statistically lower than your average ratings","3.8659217877095"
-"2557","VefReQpmVtIrss4t7ABHvA","service","beer","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in beer.
+"2557","VefReQpmVtIrss4t7ABHvA","service","beer","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in beer.
 Because comments related to beeris not statistically lower than your average ratings","3.31147540983607"
 "2558","Y4X1Ku6vgtsfQJij5ggPIA","breakfast","coffee","food","food","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","3.8695652173913"
 "2559","gm2t_12bE0qVL9Dy9Y_hkg","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.58895705521472"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.58895705521472"
 "2560","P3niu4MSCsKSRw1YC8U1AQ","pizza","delivery","food","service","You are doing well in food, specifically in pizza.
 Because comments related to pizzais not statistically lower than your average ratings","You are doing well in service, specifically in delivery.
 Because comments related to deliveryis not statistically lower than your average ratings","1.86170212765957"
@@ -7192,8 +7192,8 @@ Because comments related to staffis not statistically lower than your average ra
 "2573","DGVP4xageO2dioAygU87Ag","building","coffee","environment","food","You are doing well in environment, specifically in building.
 Because comments related to buildingis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","2.38461538461538"
-"2574","MBJeTGY7BuBhusXVNVDdIg","service","tea","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
+"2574","MBJeTGY7BuBhusXVNVDdIg","service","tea","service","food","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","3.30172413793103"
 "2575","W2S_pkqkcVIoRQx42HDduw","cream","tea","food","food","You are doing well in food, specifically in cream.
 Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in tea.
@@ -7205,8 +7205,8 @@ Because comments related to avocadois not statistically lower than your average 
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","4.22352941176471"
 "2578","s_Wc0w6NA4KzRwEG27SL5Q","pizza","service","food","service","You are doing well in food, specifically in pizza.
-Because comments related to pizzais not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.2752808988764"
+Because comments related to pizzais not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.2752808988764"
 "2579","r7KLd-CdbOwl4igYnt85xA","soup","chicken","food","food","You are doing well in food, specifically in soup.
 Because comments related to soupis not statistically lower than your average ratings","You are doing well in food, specifically in chicken.
 Because comments related to chickenis not statistically lower than your average ratings","3.44827586206897"
@@ -7619,8 +7619,8 @@ Because comments related to bowlis not statistically lower than your average rat
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","4"
 "2730","pUA63fZwACIhs4AbXg6MVg","bowl","service","food","service","You are doing well in food, specifically in bowl.
-Because comments related to bowlis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.48051948051948"
+Because comments related to bowlis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.48051948051948"
 "2731","s1NIISfH0aZjYSxiPBsAig","service","drink","service","food","You should improve the quality of service, specifically in service.
 Because comments related to serviceis statistically lower than your average ratings","You are doing well in food, specifically in drink.
 Because comments related to drinkis not statistically lower than your average ratings","3.93617021276596"
@@ -7886,8 +7886,8 @@ Because comments related to breakfastis not statistically lower than your averag
 "2819","VQPcyWCvAa5v_sS9aJ7oCA","sandwich","lunch","food","food","You are doing well in food, specifically in sandwich.
 Because comments related to sandwichis not statistically lower than your average ratings","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","4.27826086956522"
-"2820","cLg3V7Wg-PDRaOAuqWh-Mw","service","staff","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
+"2820","cLg3V7Wg-PDRaOAuqWh-Mw","service","staff","service","service","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","3.90566037735849"
 "2821","XCmRVkEIaEPkNtG6XHGZ0Q","coffee","latte","food","food","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in latte.
@@ -7899,8 +7899,8 @@ Because comments related to staffis not statistically lower than your average ra
 Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.59183673469388"
 "2824","4nT52RMmzUWECb8egmYR7g","cake","chocolate","food","food","You are doing well in food, specifically in cake.
-Because comments related to cakeis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
-Because comments related to chocolateis not statistically lower than your average ratings","4.453125"
+Because comments related to cakeis not statistically lower than your average ratings","You should improve the quality of food, specifically in chocolate.
+Because comments related to chocolateis statistically lower than your average ratings","4.453125"
 "2825","bVmFA3NT9E6QXz9lZI7-sQ","tea","drink","food","food","You are doing well in food, specifically in tea.
 Because comments related to teais not statistically lower than your average ratings","You are doing well in food, specifically in drink.
 Because comments related to drinkis not statistically lower than your average ratings","4.03921568627451"
@@ -7931,8 +7931,8 @@ Because comments related to staffis not statistically lower than your average ra
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in food, specifically in salad.
 Because comments related to saladis not statistically lower than your average ratings","4"
 "2835","fSTLgWmOJ3ngs31aPGRpHQ","coffee","service","food","service","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","4.45641025641026"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","4.45641025641026"
 "2836","8Wi-FdGvuJiTiSRZJJtOEQ","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.64367816091954"
@@ -7973,8 +7973,8 @@ Because comments related to coffeeis not statistically lower than your average r
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in family.
 Because comments related to familyis not statistically lower than your average ratings","4.05263157894737"
 "2849","R_Us8KeoK7_7zKpahq_qsg","service","taste","service","food","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in taste.
-Because comments related to tasteis not statistically lower than your average ratings","3.57142857142857"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of food, specifically in taste.
+Because comments related to tasteis statistically lower than your average ratings","3.57142857142857"
 "2850","4mvOjy1Emqhrtpea2LbnnQ","service","staff","service","service","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in staff.
 Because comments related to staffis not statistically lower than your average ratings","4.41176470588235"
@@ -8112,8 +8112,8 @@ Because comments related to staffis not statistically lower than your average ra
 "2896","EsWmeoKHsBRYIzyHwFTy-w","breakfast","service","food","service","You are doing well in food, specifically in breakfast.
 Because comments related to breakfastis not statistically lower than your average ratings","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","3.21383647798742"
-"2897","CqtJ2kQFZVatcpN-imPDKw","lunch","atmosphere","food",NA,"You are doing well in food, specifically in lunch.
-Because comments related to lunchis not statistically lower than your average ratings",NA,"4.60714285714286"
+"2897","CqtJ2kQFZVatcpN-imPDKw","lunch","atmosphere","food",NA,"You should improve the quality of food, specifically in lunch.
+Because comments related to lunchis statistically lower than your average ratings",NA,"4.60714285714286"
 "2898","JwDDGuMhVtuAtAQrDVwx0A","service","beef","service","food","You are doing well in service, specifically in service.
 Because comments related to serviceis not statistically lower than your average ratings","You are doing well in food, specifically in beef.
 Because comments related to beefis not statistically lower than your average ratings","4.52"
@@ -8302,8 +8302,8 @@ Because comments related to soupis not statistically lower than your average rat
 "2967","-usft2ncuh7t4FwSJFxU-Q","smoothie","egg","food",NA,"You are doing well in food, specifically in smoothie.
 Because comments related to smoothieis not statistically lower than your average ratings",NA,"4.6"
 "2968","-kgHwMfId_zeba5Cr04jFw","coffee","toast","food","food","You are doing well in food, specifically in coffee.
-Because comments related to coffeeis not statistically lower than your average ratings","You are doing well in food, specifically in toast.
-Because comments related to toastis not statistically lower than your average ratings","4.28571428571429"
+Because comments related to coffeeis not statistically lower than your average ratings","You should improve the quality of food, specifically in toast.
+Because comments related to toastis statistically lower than your average ratings","4.28571428571429"
 "2969","Ji0z5pe8qTQivLWYsH7dyA","cream","chocolate","food","food","You are doing well in food, specifically in cream.
 Because comments related to creamis not statistically lower than your average ratings","You are doing well in food, specifically in chocolate.
 Because comments related to chocolateis not statistically lower than your average ratings","3.46153846153846"
@@ -8337,9 +8337,9 @@ Because comments related to milkis not statistically lower than your average rat
 Because comments related to staffis not statistically lower than your average ratings","4"
 "2980","_BpvN2cbCoJAch3CFINOjw","delivery","lunch",NA,"food",NA,"You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","2.63636363636364"
-"2981","NLHHmtQaX0CHkk3jpntkNg","service","location","service","environment","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in environment, specifically in location.
-Because comments related to locationis not statistically lower than your average ratings","2.85714285714286"
+"2981","NLHHmtQaX0CHkk3jpntkNg","service","location","service","environment","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","You should improve the quality of environment, specifically in location.
+Because comments related to locationis statistically lower than your average ratings","2.85714285714286"
 "2982","BLH186ak8sT1uE5kL17Q3g","lunch","wrap","food","food","You are doing well in food, specifically in lunch.
 Because comments related to lunchis not statistically lower than your average ratings","You are doing well in food, specifically in wrap.
 Because comments related to wrapis not statistically lower than your average ratings","4.5"
@@ -8402,8 +8402,8 @@ Because comments related to beeris not statistically lower than your average rat
 Because comments related to beefis not statistically lower than your average ratings","You are doing well in food, specifically in cheese.
 Because comments related to cheeseis not statistically lower than your average ratings","4.07142857142857"
 "3005","jig9PRgl1fItHKuoJYk73A","chicken","service","food","service","You are doing well in food, specifically in chicken.
-Because comments related to chickenis not statistically lower than your average ratings","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","3.31578947368421"
+Because comments related to chickenis not statistically lower than your average ratings","You should improve the quality of service, specifically in service.
+Because comments related to serviceis statistically lower than your average ratings","3.31578947368421"
 "3006","6z7n23MVDKde3EZuCccaAQ","bread","coffee","food","food","You are doing well in food, specifically in bread.
 Because comments related to breadis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","4.3265306122449"
@@ -8437,8 +8437,8 @@ Because comments related to sandwichis not statistically lower than your average
 Because comments related to staffis not statistically lower than your average ratings","You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings","4.4"
 "3018","XvRbI8AxtWpL9wd20wXMCA","service","wait","service","service","You are doing well in service, specifically in service.
-Because comments related to serviceis not statistically lower than your average ratings","You are doing well in service, specifically in wait.
-Because comments related to waitis not statistically lower than your average ratings","2.41666666666667"
+Because comments related to serviceis not statistically lower than your average ratings","You should improve the quality of service, specifically in wait.
+Because comments related to waitis statistically lower than your average ratings","2.41666666666667"
 "3019","tIT0HkbytdrGfpnnLiEPpQ","coffee","latte","food",NA,"You are doing well in food, specifically in coffee.
 Because comments related to coffeeis not statistically lower than your average ratings",NA,"4.2"
 "3020","DG1qJwTBV6NszKPpGMJvgg","chocolate","cake","food","food","You are doing well in food, specifically in chocolate.

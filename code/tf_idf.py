@@ -14,10 +14,11 @@ trivial_words_list = ["food", "everything", "creature", "onto", "return", "impro
                       "card", "bank", "super", "hair", "addition", "home", "hospital", "worth", "office", "covid",
                       "space", "sub", "subs", "favorite", "week", "village", "produce", "dragon", "hash", "quick",
                       "party", "street", "stop", "earl", "nice", "foot"]
+
 word_list = pd.read_csv("./data/word_list.csv").iloc[:, 1].tolist()
 
 
-def tf_idf(text, words, language = "english"):
+def tf_idf(text, words, language = "english", size = 2):
     stop_words = stopwords.words(language)
     vectorizer = CountVectorizer(stop_words = stop_words)
     frequency_matrix = TfidfTransformer().fit_transform(vectorizer.fit_transform(text))
@@ -27,7 +28,7 @@ def tf_idf(text, words, language = "english"):
     tags = nltk.pos_tag(features)
     words = [word for word, tag in tags if tag == "NN" and word in words]
     frequency_series = pd.Series(frequency_array, index = features)
-    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:2]
+    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:(size - 1)]
 
     return frequency_series
 
@@ -42,6 +43,18 @@ for ids in business_id:
     row = pd.Series(ids, index = ["business_id"]).append(
         freq.index.to_series(
             index = range(1, (len(freq) + 1))))
+
+    freq_low = tf_idf(reviews.loc[(reviews["business_id"] == ids) & (reviews["stars"] <= 1), "text"], words = word_list, size = 1)
+
+    # row = row.append(freq_low.index.to_series(index = range(1, (len(freq_low) + 1))))
+
+    break
+
     key_features = key_features.append(row, ignore_index = True)
 
-key_features.to_csv("./data/tf_idf_words.csv")
+# key_features.to_csv("./data/tf_idf_words.csv")
+
+
+
+
+
