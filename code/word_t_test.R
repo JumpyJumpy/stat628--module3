@@ -37,11 +37,11 @@ for (id in business_id) {
         top2_stars <- reviews_selected$stars[grep(top2, reviews_selected$text)]
         top2_test <- t.test(x = top2_stars, y = reviews_selected$stars, alternative = "less")
 
-        if (top1_test$p.value < 0.05) {
-            sugg2 <- paste0("You should improve the quality of ", top1, "There is significant ")
+        if (top2_test$p.value < 0.05) {
+            sugg2 <- paste0("You should improve the quality of ", label2, "There is significant ")
         } else {
             sugg2 <-
-                    paste0("You are doing well in ", top1, ".\nBecause comments related to ", top1, "is not statistically lower than your average rating. se( ", top1_test$stderr, ")")
+                    paste0("You are doing well in ", label2, ", specifically in ", top2, "\nBecause comments related to ", top2, "is not statistically lower than your average rating. se( ", top2_test$stderr, ")")
         }
     } else {
         sugg2 <- NA
