@@ -1,7 +1,7 @@
 library(shiny)
 library(dplyr)
 
-business <- read.csv('../business.csv')
+business <- read.csv('../../data/business.csv')
 
 ui <- fluidPage(
     titlePanel('Recommendations Based on Yelp Reviews'),

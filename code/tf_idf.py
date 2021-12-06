@@ -14,7 +14,9 @@ trivial_words_list = ["food", "everything", "creature", "onto", "return", "impro
                       "card", "bank", "super", "hair", "addition", "home", "hospital", "worth", "office", "covid",
                       "space", "sub", "subs", "favorite", "week", "village", "produce", "dragon", "hash", "quick",
                       "party", "street", "stop", "earl", "nice", "foot"]
-word_list = []
+word_list = pd.read_csv("./data/word_list.csv").iloc[:, 1].tolist()
+
+
 
 
 def tf_idf(text, words, language = "english"):
