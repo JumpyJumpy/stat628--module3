@@ -1,366 +1,65 @@
-## By T Luo ##
-library(tidytext)
-library(tidyr)
-library(dplyr)
-library(stringr)
-library(tidyverse)
-library(magrittr)
-library(MASS)
-library(car)
-
-getwd()
-business <- read_csv("business_flattened.csv")
-review <- read_csv("filtered_reviews.csv")
-review$business_id <- factor(review$business_id)
-
-
-star_avg <- tapply(review$stars, review$business_id, mean)
-star_avg <- data.frame(stars = star_avg, business_id = names(star_avg))
-
-dataset <- merge(business, star_avg, by = "business_id")
-write.csv(dataset, "dataset.csv")
-
-
-## get data ##
-## mark NA as one level ##
-anova <- read.csv("business_flattened.csv", na.strings = NULL)[, c(2, 10, 16, 24, 31, 20, 30, 23, 25, 51:64)]
-summary(anova)
-
-
-anova$RestaurantsPriceRange2[is.na(anova$RestaurantsPriceRange2)] <- 0
-anova$RestaurantsPriceRange2 <- factor(anova$RestaurantsPriceRange2)
-
-## data processing ##
-anova$WiFi <- gsub("u'free'", "FREE", anova$WiFi)
-anova$WiFi <- gsub("'free'", "FREE", anova$WiFi)
-anova$WiFi <- gsub("'no'", "NO", anova$WiFi)
-anova$WiFi <- gsub("u'no'", "NO", anova$WiFi)
-anova$WiFi <- gsub("u'paid'", "PAID", anova$WiFi)
-anova$WiFi <- gsub("uNO", "", anova$WiFi)
-anova$WiFi <- gsub("'paid'", "PAID", anova$WiFi)
-anova$RestaurantsTakeOut <- gsub("None", "", anova$RestaurantsTakeOut)
-anova$RestaurantsDelivery <- gsub("None", "", anova$RestaurantsDelivery)
-anova$OutdoorSeating <- gsub("None", "", anova$OutdoorSeating)
-anova$HasTV <- gsub("None", "", anova$HasTV)
-anova$RestaurantsReservations <- gsub("None", "", anova$RestaurantsReservations)
-anova$RestaurantsPriceRange2 <- gsub("0", "", anova$RestaurantsPriceRange2)
-anova[which(anova == "", arr.ind = T)] <- "NA"
-
-anova_factor <- cbind(anova[, c(1, 2)], as.data.frame(lapply(anova[, -c(1, 2)], factor)))
-colnames(anova_factor)[1] <- "business_id"
-
-
-model <- lm(stars ~ . - (business_id), data = anova_factor)
-summary(model)
-## anova model ##
-model <- aov(stars ~ . - business_id, data = anova_factor)
-summary(model)
-
-
-library(xtable)
-print(xtable(anova(model)))
-
-
-
-# Plotting
-anova$stars[which(anova$stars==1.5)] = floor(anova$stars[which(anova$stars==1.5)])
-anova$stars[which(anova$stars==2.5)] = floor(anova$stars[which(anova$stars==2.5)])
-anova$stars[which(anova$stars==3.5)] = floor(anova$stars[which(anova$stars==3.5)])
-anova$stars[which(anova$stars==4.5)] = floor(anova$stars[which(anova$stars==4.5)])
-
-
-## Restaurant Delivery
-library(ggplot2)
-library(wesanderson)
-
-
-
-
-result=anova %>% count(RestaurantsDelivery,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=result[c(1:5),3]/sum
-true=result[c(11:15),3]/sum
-
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="Restaurants Delivery",legend.text = c("FALSE","TRUE"),args.legend=c(13,0.5,x.intersp = 0.2,y.intersp = 0.7,text.width=2,cex=0.6))
-
-# Plot Average Rating by Restaurant Delivery
-RD_false_index= which(anova$RestaurantsDelivery == "False")
-RD_true_index = which(anova$RestaurantsDelivery == "True")
-avg_rating_RD = c(mean(anova$stars[RD_false_index]),mean(anova$stars[RD_true_index]))
-rd = c("False","True")
-avg_rating_RD_dat = as.data.frame(cbind(avg_rating_RD,rd))
-avg_rating_RD_dat$avg_rating_RD=as.numeric(as.character(avg_rating_RD_dat$avg_rating_RD))
-colnames(avg_rating_RD_dat)[1] = "AverageRating"; colnames(avg_rating_RD_dat)[2] = "RestaurantsDelivery"
-as.numeric(avg_rating_RD_dat$AverageRating)
-
-plot_avg_rating_RD = ggplot(avg_rating_RD_dat,aes(x=RestaurantsDelivery,y= AverageRating,fill= RestaurantsDelivery))+geom_bar(stat = "identity") 
-plot_avg_rating_RD+theme(text = element_text(size=18),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Delivery") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=3)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# library(car)
-# p < 2.2e-16 
-leveneTest(anova$stars ~ anova$RestaurantsDelivery)
-
-3.572146-3.644167
-
-# two-sample t-test
-# p-value < 2.2e-16
-# not equal
-t.test(anova$stars[RD_false_index],anova$stars[RD_true_index],paired = FALSE,var.equal = FALSE)
-length(anova$stars[RD_false_index])
-length(RD_false_index)
-
-
-## Business Parking garage
-
-
-result=anova %>% count(garage,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=result[c(1:5),3]/sum
-true=result[c(11:15),3]/sum
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,1),xlab="Stars",ylab="Proportion",main="Garage")
-
-
-# Plot Average Rating by Business Parking
-BP_false_index= which(anova$garage=="False")
-BP_true_index = which(anova$garage=="True")
-
-avg_rating_BP = c(mean(anova$stars[BP_false_index]),mean(anova$stars[BP_true_index]))
-bp = c("False","True")
-avg_rating_BP_dat = as.data.frame(cbind(avg_rating_BP,bp))
-avg_rating_BP_dat$avg_rating_BP=as.numeric(as.character(avg_rating_BP_dat$avg_rating_BP))
-colnames(avg_rating_BP_dat)[1] = "AverageRating"; colnames(avg_rating_BP_dat)[2] = "BusinessParking"
-plot_avg_rating_BP = ggplot(avg_rating_BP_dat,aes(x=BusinessParking,y= AverageRating,fill= BusinessParking))+geom_bar(stat = "identity") 
-plot_avg_rating_BP+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Business Parking") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# p < 2.2e-16
-leveneTest(anova$stars ~ anova$garage)
-
-
-
-
-
-
-# p-value < 2.2e-16
-t.test(anova$stars[BP_false_index],anova$stars[BP_true_index],paired = FALSE,var.equal = FALSE)
-
-
-## Outdoor Seating
-
-
-result=anova %>% count(OutdoorSeating,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=result[c(1:5),3]/sum
-true=result[c(11:15),3]/sum
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="Outdoor Seating")
-
-
-# Plot Average Rating by Outdoor Seating
-OS_false_index = which(anova$OutdoorSeating=="False")
-OS_true_index = which(anova$OutdoorSeating=="True")
-avg_rating_OS = c(mean(anova$stars[OS_false_index]),mean(anova$stars[OS_true_index]))
-OS = c("False","True")
-avg_rating_OS_dat = as.data.frame(cbind(avg_rating_OS,OS))
-avg_rating_OS_dat$avg_rating_OS=as.numeric(as.character(avg_rating_OS_dat$avg_rating_OS))
-colnames(avg_rating_OS_dat)[1] = "AverageRating"; colnames(avg_rating_OS_dat)[2] = "OutdoorSeating"
-plot_avg_rating_OS = ggplot(avg_rating_OS_dat,aes(x=OutdoorSeating,y= AverageRating,fill= OutdoorSeating))+geom_bar(stat = "identity") 
-plot_avg_rating_OS+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Outdoor Seating") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# p < 2.2e-16
-leveneTest(anova$stars ~ anova$OutdoorSeating)
-# p-value < 2.2e-16
-t.test(anova$stars[OS_false_index],anova$stars[OS_true_index],
-       paired = FALSE,var.equal = FALSE)
-
-
-### Has TV
-  
-  result=anova %>% count(HasTV,stars)
-  sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-  false=result[c(1:5),3]/sum
-  true=result[c(11:15),3]/sum
-  stars=c(1,2,3,4,5)
-  datause=cbind(stars,false,true)
-  matrix=t(datause[,c(2:3)])
-  barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="HasTV")
-  
-  # Plot Average Rating by HasTV
-  TV_false_index= which(anova$HasTV=="False")
-  TV_true_index = which(anova$HasTV=="True")
-  avg_rating_TV = c(mean(anova$stars[TV_false_index]),mean(anova$stars[TV_true_index]))
-  TV = c("False","True")
-  avg_rating_TV_dat = as.data.frame(cbind(avg_rating_TV,TV))
-  avg_rating_TV_dat$avg_rating_TV=as.numeric(as.character(avg_rating_TV_dat$avg_rating_TV))
-  colnames(avg_rating_TV_dat)[1] = "AverageRating"; colnames(avg_rating_TV_dat)[2] = "HasTV"
-  plot_avg_rating_TV = ggplot(avg_rating_TV_dat,aes(x=HasTV,y= AverageRating,fill= HasTV))+geom_bar(stat = "identity") 
-  plot_avg_rating_TV+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("HasTV") + ylab("Average Rating")+
-    geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-  
-  # p < 2.2e-16
-  leveneTest(anova$stars ~ anova$HasTV)
-  # p-value < 2.2e-16
-  t.test(anova$stars[TV_false_index],anova$stars[TV_true_index],
-         paired = FALSE,var.equal = FALSE)
- 
-
-## PriceRange
-
-result=anova %>% count(anova$RestaurantsPriceRange2,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-first=result[c(1:5),3]/sum
-second=result[c(6:10),3]/sum
-third=result[c(11:15),3]/sum
-fourth=c(0,4/162,4/948,2/1731,0)
-
-stars=c(1,2,3,4,5)
-datause=cbind(stars,first,second,third,fourth)
-matrix=t(datause[,c(2:5)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=4,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="Price Range")
-
-
-
-
-# Plot Average rating by Price Range
-PR_1_index = which(anova$RestaurantsPriceRange2==1)
-PR_2_index = which(anova$RestaurantsPriceRange2==2)
-PR_3_index = which(anova$RestaurantsPriceRange2==3)
-PR_4_index = which(anova$RestaurantsPriceRange2==4)
-PR_5_index = which(anova$RestaurantsPriceRange2=="NA")
-avg_rating_PR = c(mean(anova$stars[PR_1_index]),mean(anova$stars[PR_2_index]),mean(anova$stars[PR_3_index]),mean(anova$stars[PR_4_index]))
-PR = c("1","2","3","4","NA")
-avg_rating_PR_dat = as.data.frame(cbind(avg_rating_PR,PR))
-avg_rating_PR_dat$avg_rating_PR=as.numeric(as.character(avg_rating_PR_dat$avg_rating_PR))
-colnames(avg_rating_PR_dat)[1] = "AverageRating"; colnames(avg_rating_PR_dat)[2] = "PriceRange"
-plot_avg_rating_PR = ggplot(avg_rating_PR_dat,aes(x=PriceRange,y= AverageRating,fill= PriceRange))+geom_bar(stat = "identity") 
-plot_avg_rating_PR+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Price Range") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=5,name="Darjeeling1"))
-
-# p <2e-16
-fit_PR = aov(anova$stars ~ anova$RestaurantsPriceRange2)
-summary(fit_PR)
-# 2-1, 4-2 significant
-TukeyHSD(fit_PR)
-
-
-## Street
-
-
-
-result=anova %>% count(anova$street,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=result[c(1:5),3]/sum
-true=result[c(11:15),3]/sum
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="Street")
-
-
-
-
-
-# Plot Average Rating by street
-street_false_index= which(anova$street=="False")
-street_true_index = which(anova$street=="True")
-avg_rating_street = c(mean(anova$stars[street_false_index]),mean(anova$stars[street_true_index]))
-street = c("False","True")
-avg_rating_street_dat = as.data.frame(cbind(avg_rating_street,street))
-avg_rating_street_dat$avg_rating_street=as.numeric(as.character(avg_rating_street_dat$avg_rating_street))
-colnames(avg_rating_street_dat)[1] = "AverageRating"; colnames(avg_rating_street_dat)[2] = "street"
-plot_avg_rating_street = ggplot(avg_rating_street_dat,aes(x=street,y= AverageRating,fill= street))+geom_bar(stat = "identity") 
-plot_avg_rating_street+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Street") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# p = 0.0002134 
-leveneTest(anova$stars ~ anova$street)
-# p-value = 1.878e-10
-t.test(anova$stars[street_false_index],anova$stars[street_true_index],
-       paired = FALSE,var.equal = FALSE)
-
-
-## Lots
-
-
-result=anova %>% count(lot,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=result[c(1:5),3]/sum
-true=result[c(11:15),3]/sum
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,0.6),xlab="Stars",ylab="Proportion",main="Lot")
-
-
-
-# Plot Average Rating by Lots
-lot_false_index= which(anova$lot=="False")
-lot_true_index = which(anova$lot=="True")
-avg_rating_lot = c(mean(anova$stars[lot_false_index]),mean(anova$stars[lot_true_index]))
-lot = c("False","True")
-avg_rating_lot_dat = as.data.frame(cbind(avg_rating_lot,lot))
-avg_rating_lot_dat$avg_rating_lot=as.numeric(as.character(avg_rating_lot_dat$avg_rating_lot))
-colnames(avg_rating_lot_dat)[1] = "AverageRating"; colnames(avg_rating_lot_dat)[2] = "GoodForlot"
-plot_avg_rating_lot = ggplot(avg_rating_lot_dat,aes(x=GoodForlot,y= AverageRating,fill= GoodForlot))+geom_bar(stat = "identity") 
-plot_avg_rating_lot+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Good For lot") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# p = 5.992e-06
-leveneTest(anova$stars ~ anova$lot)
-# p-value < 2.2e-16
-t.test(anova$stars[lot_false_index],anova$stars[lot_true_index],
-       paired = FALSE,var.equal = FALSE)
-
-
-
-
-######################################################################
-
-
-# Plot Restaurant Takeout by Stars 
-
-result=anova %>% count(anova$RestaurantsTakeOut,stars)
-sum=aggregate(result$n,by=list(type=result$stars),sum)$x
-false=c(0,14/162,44/948,74/1731,17/147)
-true=result[c(10:14),3]/sum
-
-stars=c(1,2,3,4,5)
-datause=cbind(stars,false,true)
-matrix=t(datause[,c(2:3)])
-barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,1),xlab="Stars",ylab="Proportion",main="Restaurants Takeout")
-
-
-# Plot Average Rating by Restaurant Delivery
-RT_false_index= anova[which(anova$RestaurantsTakeOut == "False"),]
-RT_true_index = anova[which(anova$RestaurantsTakeOut == "True"),]
-avg_rating_RT = c(mean(RT_false_index$stars),mean(RT_true_index$stars))
-rt = c("False","True")
-avg_rating_RT_dat = as.data.frame(cbind(avg_rating_RT,rt))
-avg_rating_RT_dat$avg_rating_RT=as.numeric(as.character(avg_rating_RT_dat$avg_rating_RT))
-colnames(avg_rating_RT_dat)[1] = "AverageRating"; colnames(avg_rating_RT_dat)[2] = "RestaurantsTakeout"
-as.numeric(avg_rating_RT_dat$AverageRating)
-
-plot_avg_rating_RT = ggplot(avg_rating_RT_dat,aes(x=RestaurantsTakeout,y= AverageRating,fill= RestaurantsTakeout))+geom_bar(stat = "identity") 
-plot_avg_rating_RT+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Delivery") + ylab("Average Rating")+
-  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
-
-# two-sample t-test
-# p-value < 2.2e-16
-# not equal
-t.test(anova$stars[RT_false_index],anova$stars[RT_true_index],paired = FALSE,var.equal = FALSE)
-length(anova$stars[RT_false_index])
-length(RD_false_index)
-
-
-
-
+,Var1,Kind,Freq
+2482,service,service,2220
+2611,staff,service,1789
+658,coffee,food,1651
+351,breakfast,food,1023
+1650,lunch,food,821
+1621,location,environment,516
+581,chicken,food,444
+2723,tea,food,392
+1757,menu,food,383
+1567,latte,food,313
+2427,sandwich,food,286
+594,chocolate,food,268
+2907,wait,service,233
+2201,price,food,226
+747,cream,food,208
+2715,taste,food,202
+965,egg,food,197
+927,drink,food,194
+2249,quality,food,192
+347,bread,food,189
+880,dinner,food,187
+2333,rice,food,185
+2782,toast,food,171
+386,brunch,food,156
+2162,pork,food,143
+2577,soup,food,140
+224,beer,food,138
+1792,milk,food,132
+1876,music,environment,132
+1034,family,environment,130
+157,bacon,food,116
+458,cake,food,109
+335,bowl,food,107
+159,bagel,food,106
+416,burger,food,104
+1080,flavor,food,101
+223,beef,food,99
+2438,sauce,food,95
+2406,salad,food,89
+1633,lot,environment,88
+2119,pizza,food,86
+1736,meat,food,84
+1735,meal,food,78
+560,cheese,food,75
+2897,visit,service,75
+2968,wifi,service,72
+1371,hour,service,71
+131,atmosphere,environment,70
+146,avocado,food,70
+2909,waitress,food,66
+1725,matcha,food,62
+1134,fruit,food,60
+2975,wine,food,59
+3005,wrap,food,57
+2528,sit,environment,55
+623,clean,environment,54
+2030,park,environment,54
+767,croissant,food,52
+2369,room,environment,52
+2547,smoothie,food,51
+2906,waffle,food,51
+405,building,environment,50
+850,delivery,service,50
+2009,panini,food,50
