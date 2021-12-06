@@ -17,8 +17,6 @@ trivial_words_list = ["food", "everything", "creature", "onto", "return", "impro
 word_list = pd.read_csv("./data/word_list.csv").iloc[:, 1].tolist()
 
 
-
-
 def tf_idf(text, words, language = "english"):
     stop_words = stopwords.words(language)
     vectorizer = CountVectorizer(stop_words = stop_words)
