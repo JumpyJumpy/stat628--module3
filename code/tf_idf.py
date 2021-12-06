@@ -39,7 +39,7 @@ business_id = set(reviews["business_id"].tolist())
 key_features = pd.DataFrame()
 for ids in business_id:
     row = pd.Series(ids, index = ["business_id"]).append(
-        tf_idf(reviews.loc[reviews["business_id"] == ids, "text"], trivial_words = trivial_words_list).index.to_series(
+        tf_idf(reviews.loc[reviews["business_id"] == ids, "text"], words = word_list).index.to_series(
             index = range(1, 11)))
     key_features = key_features.append(row, ignore_index = True)
 
