@@ -27,7 +27,7 @@ def tf_idf(text, words, language = "english"):
     tags = nltk.pos_tag(features)
     words = [word for word, tag in tags if tag == "NN" and word in words]
     frequency_series = pd.Series(frequency_array, index = features)
-    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:10]
+    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:2]
 
     return frequency_series
 
@@ -40,7 +40,7 @@ key_features = pd.DataFrame()
 for ids in business_id:
     row = pd.Series(ids, index = ["business_id"]).append(
         tf_idf(reviews.loc[reviews["business_id"] == ids, "text"], words = word_list).index.to_series(
-            index = range(1, 11)))
+            index = range(1, 3)))
     key_features = key_features.append(row, ignore_index = True)
 
 key_features.to_csv("./data/tf_idf_words.csv")
