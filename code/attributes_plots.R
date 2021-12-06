@@ -96,7 +96,7 @@ plot_avg_rating_RD = ggplot(avg_rating_RD_dat,aes(x=RestaurantsDelivery,y= Avera
 plot_avg_rating_RD+theme(text = element_text(size=18),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Delivery") + ylab("Average Rating")+
   geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
 
-# variance equal test#
+# # variance equal test#
 # p = 0.007478 
 leveneTest(anova$stars ~ anova$RestaurantsDelivery)
 
@@ -105,6 +105,42 @@ leveneTest(anova$stars ~ anova$RestaurantsDelivery)
 # not equal
 t.test(anova$stars[RD_false_index],anova$stars[RD_true_index],paired = FALSE,var.equal = FALSE)
 
+## Restaurant reservation
+
+#Plot Restaurant reservation proportion by stars#
+
+result = anova %>% count(RestaurantsReservations,stars)
+sum = aggregate(result$n,by=list(type=result$stars),sum)$x
+false = result[c(1:5),3]/sum
+
+true = c(0,28/162,198/948,308/1731,14/147)
+
+stars = c(1,2,3,4,5)
+datause = cbind(stars,false,true)
+matrix = t(datause[,c(2:3)])
+barplot(matrix,names.arg=stars,beside=TRUE,col=wes_palette(n=2,name="Darjeeling1"),ylim=c(0,1),xlab="Stars",ylab="Proportion",main="Restaurants Reservation",legend.text = c("FALSE","TRUE"),args.legend=c(13,0.5,x.intersp = 0.2,y.intersp = 0.7,text.width=2,cex=0.6))
+
+# Plot Average Rating by Restaurant reservation
+RR_false_index = which(anova$RestaurantsReservations == "False")
+RR_true_index = which(anova$RestaurantsReservations == "True")
+avg_rating_RR = c(mean(anova$stars[RR_false_index]),mean(anova$stars[RR_true_index]))
+RR = c("False","True")
+avg_rating_RR_dat = as.data.frame(cbind(avg_rating_RR,RR))
+avg_rating_RR_dat$avg_rating_RR=as.numeric(as.character(avg_rating_RR_dat$avg_rating_RR))
+colnames(avg_rating_RR_dat)[1] = "AverageRating"; colnames(avg_rating_RR_dat)[2] = "RestaurantsReservations"
+as.numeric(avg_rating_RR_dat$AverageRating)
+plot_avg_rating_RR = ggplot(avg_rating_RR_dat,aes(x=RestaurantsReservations,y= AverageRating,fill= RestaurantsReservations))+geom_bar(stat = "identity") 
+plot_avg_rating_RR+theme(text = element_text(size=18),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Reservation") + ylab("Average Rating")+
+  geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
+
+# variance equal test#
+# p = 0.8733
+leveneTest(anova$stars ~ anova$RestaurantsReservations)
+
+# two-sample t-test
+# p-value = 0.3921
+
+t.test(anova$stars[RR_false_index],anova$stars[RR_true_index],paired = FALSE,var.equal = TRUE)
 
 
 ## Parking Garage
@@ -407,7 +443,7 @@ t.test(anova$stars[touristy_false_index],anova$stars[touristy_true_index],
 
 
 
-# classy
+# # classy
 
 
 result=anova %>% count(classy,stars)
@@ -467,7 +503,7 @@ colnames(avg_rating_RT_dat)[1] = "AverageRating"; colnames(avg_rating_RT_dat)[2]
 as.numeric(avg_rating_RT_dat$AverageRating)
 
 plot_avg_rating_RT = ggplot(avg_rating_RT_dat,aes(x=RestaurantsTakeout,y= AverageRating,fill= RestaurantsTakeout))+geom_bar(stat = "identity") 
-plot_avg_rating_RT+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants Delivery") + ylab("Average Rating")+
+plot_avg_rating_RT+theme(text = element_text(size=20),legend.position="none",plot.title = element_text(hjust = 0.5))+ scale_y_continuous(limits = c(0, 5))+ xlab("Restaurants reservation") + ylab("Average Rating")+
   geom_text(stat="identity",aes(label=round(AverageRating,digits=4)),size=8)+scale_fill_manual(values=wes_palette(n=2,name="Darjeeling1"))
 
 
