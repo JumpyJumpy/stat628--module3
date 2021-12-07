@@ -61,7 +61,7 @@ for (id in business_id) {
 
     if (!(top3 %in% c(top1, top2)) & !is.na(top3)) {
         top3 <- as.character(top3)
-        label3 <- label$Kind[label$Var1 == top3]
+        label3 <- label$Kind[label$Var1 == top3][1]
 
         sugg3 <- paste0("You should improve the quality of ", label3, ", specifically in ",
                         top3, ".\nBecause negative comments are mostly related to ", top3, ".")
