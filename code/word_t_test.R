@@ -22,7 +22,7 @@ for (id in business_id) {
 
     if (!any(is.na(top1), sd(top1_stars <- reviews_selected$stars[grep(top1, reviews_selected$text)]) == 0, is.na(sd(top1_stars)), na.rm = TRUE)) {
         top1 <- as.character(top1)
-        label1 <- label$Kind[label$Var1 == top1]
+        label1 <- label$Kind[label$Var1 == top1][1]
         top1_test <- t.test(x = top1_stars, y = reviews_selected$stars, alternative = "less")
 
         if (top1_test$p.value < 0.1) {
@@ -41,7 +41,7 @@ for (id in business_id) {
 
     if (!any(is.na(top1), sd(top2_stars <- reviews_selected$stars[grep(top2, reviews_selected$text)]) == 0, is.na(sd(top2_stars)), na.rm = TRUE)) {
         top2 <- as.character(top2)
-        label2 <- label$Kind[label$Var1 == top2]
+        label2 <- label$Kind[label$Var1 == top2][1]
         top2_test <- t.test(x = top2_stars, y = reviews_selected$stars, alternative = "less")
 
         if (top2_test$p.value < 0.1) {
@@ -57,6 +57,7 @@ for (id in business_id) {
         sugg2 <- NA
         label2 <- NA
     }
+    break
 
     if (!(top3 %in% c(top1, top2)) & !is.na(top3)) {
         top3 <- as.character(top3)
@@ -71,7 +72,7 @@ for (id in business_id) {
         top1 <- as.character(top1)
         top2 <- as.character(top2)
         top3 <- as.character(top3)
-        label3 <- label$Kind[label$Var1 == top3]
+        label3 <- label$Kind[label$Var1 == top3][1]
         c(top1, top2)[c(top1, top2) == top3]
         eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
         eval(parse(text = paste0("top", which(c(top1, top2) == top3), " <- NA")))
