@@ -76,7 +76,7 @@ for (id in business_id) {
         top3 <- as.character(top3)
         label3 <- label$Kind[label$Var1 == top3][1]
         sugg3 <- paste0("You should offer more stable ", label3, " quality, specifically ",
-                        top3, ".\nBecause there are many postive and negative comments related to ", top3, ".")
+                        top3, ".\nBecause there are many positive and negative comments related to ", top3, ".")
 
         eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
         eval(parse(text = paste0("label", which(c(top1, top2) == top3), " <- NA")))
