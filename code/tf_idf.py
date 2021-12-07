@@ -15,7 +15,7 @@ trivial_words_list = ["food", "everything", "creature", "onto", "return", "impro
                       "space", "sub", "subs", "favorite", "week", "village", "produce", "dragon", "hash", "quick",
                       "party", "street", "stop", "earl", "nice", "foot"]
 
-word_list = pd.read_csv("./data/word_list.csv").iloc[:, 1].tolist()
+word_list = pd.read_csv("./data/word_list.csv").iloc[:, 0].tolist()
 
 
 def tf_idf(text, words, language = "english", size = 2):
@@ -28,7 +28,7 @@ def tf_idf(text, words, language = "english", size = 2):
     tags = nltk.pos_tag(features)
     words = [word for word, tag in tags if tag == "NN" and word in words]
     frequency_series = pd.Series(frequency_array, index = features)
-    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:(size - 1)]
+    frequency_series = frequency_series.loc[words].sort_values(ascending = False)[0:size]
 
     return frequency_series
 
@@ -38,21 +38,27 @@ reviews = pd.read_csv("./data/filtered_reviews.csv")
 business_id = set(reviews["business_id"].tolist())
 
 key_features = pd.DataFrame()
+i = 0
 for ids in business_id:
     freq = tf_idf(reviews.loc[reviews["business_id"] == ids, "text"], words = word_list)
     row = pd.Series(ids, index = ["business_id"]).append(
         freq.index.to_series(
             index = range(1, (len(freq) + 1))))
 
-    freq_low = tf_idf(reviews.loc[(reviews["business_id"] == ids) & (reviews["stars"] <= 1), "text"], words = word_list, size = 1)
-
-    # row = row.append(freq_low.index.to_series(index = range(1, (len(freq_low) + 1))))
-
-    break
+    if reviews.loc[(reviews["business_id"] == ids) & (reviews["stars"] <= 2), "text"].tolist():
+        freq_low = tf_idf(reviews.loc[(reviews["business_id"] == ids) & (reviews["stars"] <= 2), "text"], words = word_list, size = 1)
+        row = row.append(freq_low.index.to_series(index = [3] * len(freq_low)))
+    else:
+        freq_low = pd.Series(np.nan, index = [3])
+        row = row.append(freq_low)
 
     key_features = key_features.append(row, ignore_index = True)
 
-# key_features.to_csv("./data/tf_idf_words.csv")
+    i += 1
+    print(f"{i}/{len(business_id)}")
+
+
+key_features.to_csv("./data/tf_idf_words.csv")
 
 
 

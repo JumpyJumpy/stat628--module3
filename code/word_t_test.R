@@ -2,17 +2,23 @@ library("tidyverse")
 library("car")
 
 reviews <- read_csv("./data/filtered_reviews.csv")
-words <- read_csv("./data/tf_idf_words.csv", na = c("", "NA", "NaN"))[-1]
-label <- read_csv("./data/word_list.csv",)[, -1]
+words <- read_csv("./data/tf_idf_words.csv", na = c("", "NA", "NaN"))[, -1]
+label <- read_csv("./data/word_list.csv")
+label[!duplicated(label$Var1),]
+
 
 business_id <- unique(reviews$business_id)
-suggestions <- data.frame(business_id = business_id, word1 = NA, word2 = NA, word1_label = NA, word2_label = NA, suggestion1 = NA, suggestion2 = NA, average_rating = NA)
+suggestions <- data.frame(business_id = business_id, word1 = NA, word2 = NA, word3 = NA,
+                          word1_label = NA, word2_label = NA, word3_lable = NA,
+                          suggestion1 = NA, suggestion2 = NA, suggestions3 = NA,
+                          average_rating = NA)
 
 i <- 0
 for (id in business_id) {
     reviews_selected <- reviews[reviews$business_id == id,]
     top1 <- words[words$business_id == id, "1"]
     top2 <- words[words$business_id == id, "2"]
+    top3 <- words[words$business_id == id, "3"]
 
     if (!any(is.na(top1), sd(top1_stars <- reviews_selected$stars[grep(top1, reviews_selected$text)]) == 0, is.na(sd(top1_stars)), na.rm = TRUE)) {
         top1 <- as.character(top1)
@@ -51,11 +57,36 @@ for (id in business_id) {
         sugg2 <- NA
         label2 <- NA
     }
-    average_rating <- mean(reviews_selected$stars)
-    suggestions[suggestions$business_id == id, 2:8] <- c(top1, top2, label1, label2, sugg1, sugg2, average_rating)
-    i <- i + 1
-    cat(sep = "", i,"/", length(business_id), "\n")
 
+    if (!(top3 %in% c(top1, top2)) & !is.na(top3)) {
+        top3 <- as.character(top3)
+        label3 <- label$Kind[label$Var1 == top3]
+
+        sugg3 <- paste0("You should improve the quality of ", label3, ", specifically in ",
+                        top3, ".\nBecause negative comments are mostly related to ", top3, ".")
+    } else if (is.na(top3)) {
+        sugg3 <- NA
+        label3 <- NA
+    } else if (top3 %in% c(top1, top2)) {
+        top1 <- as.character(top1)
+        top2 <- as.character(top2)
+        top3 <- as.character(top3)
+        label3 <- label$Kind[label$Var1 == top3]
+        c(top1, top2)[c(top1, top2) == top3]
+        eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
+        eval(parse(text = paste0("top", which(c(top1, top2) == top3), " <- NA")))
+        eval(parse(text = paste0("label", which(c(top1, top2) == top3), " <- NA")))
+        sugg3 <- paste0("You should offer more stable ", label3, " quality, specifically ",
+                        top3, ".\nBecause there are many postive and negative comments related to ", top3, ".")
+    }
+
+
+    average_rating <- mean(reviews_selected$stars)
+    suggestions[suggestions$business_id == id, 2:11] <-
+            c(top1, top2, top3, label1, label2, label3, sugg1, sugg2, sugg3, average_rating)
+    i <- i + 1
+    cat(sep = "", i, "/", length(business_id), "\n")
+    break
 }
 
 write.csv(suggestions, "./data/suggestions.csv")
