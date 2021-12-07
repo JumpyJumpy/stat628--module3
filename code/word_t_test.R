@@ -26,15 +26,16 @@ for (id in business_id) {
         top1_test <- t.test(x = top1_stars, y = reviews_selected$stars, alternative = "less")
 
         if (top1_test$p.value < 0.1) {
-            sugg1 <- paste0("You should improve the quality of ", label1, ", specifically in ",
+            sugg1 <- paste0("You should improve the quality of ", label1, ", specifically ",
                             top1, ".\nBecause comments related to ", top1,
                             "is statistically lower than your average ratings")
         } else {
-            sugg1 <- paste0("You are doing well in ", label1, ", specifically in ",
+            sugg1 <- paste0("You are doing well in ", label1, ", specifically ",
                             top1, ".\nBecause comments related to ", top1,
                             "is not statistically lower than your average ratings")
         }
     } else {
+        top1 <- NA
         sugg1 <- NA
         label1 <- NA
     }
@@ -45,40 +46,42 @@ for (id in business_id) {
         top2_test <- t.test(x = top2_stars, y = reviews_selected$stars, alternative = "less")
 
         if (top2_test$p.value < 0.1) {
-            sugg2 <- paste0("You should improve the quality of ", label2, ", specifically in ",
+            sugg2 <- paste0("You should improve the quality of ", label2, ", specifically ",
                             top2, ".\nBecause comments related to ", top2,
                             "is statistically lower than your average ratings")
         } else {
-            sugg2 <- paste0("You are doing well in ", label2, ", specifically in ",
+            sugg2 <- paste0("You are doing well in ", label2, ", specifically ",
                             top2, ".\nBecause comments related to ", top2,
                             "is not statistically lower than your average ratings")
         }
     } else {
+        top2 <- NA
         sugg2 <- NA
         label2 <- NA
     }
-    break
 
-    if (!(top3 %in% c(top1, top2)) & !is.na(top3)) {
+    if (!(as.character(top3) %in% c(top1, top2)) & !is.na(top3)) {
         top3 <- as.character(top3)
         label3 <- label$Kind[label$Var1 == top3][1]
 
-        sugg3 <- paste0("You should improve the quality of ", label3, ", specifically in ",
+        sugg3 <- paste0("You should improve the quality of ", label3, ", specifically ",
                         top3, ".\nBecause negative comments are mostly related to ", top3, ".")
     } else if (is.na(top3)) {
+        top3 <- NA
         sugg3 <- NA
         label3 <- NA
-    } else if (top3 %in% c(top1, top2)) {
+    } else if (as.character(top3) %in% c(top1, top2)) {
         top1 <- as.character(top1)
         top2 <- as.character(top2)
         top3 <- as.character(top3)
         label3 <- label$Kind[label$Var1 == top3][1]
-        c(top1, top2)[c(top1, top2) == top3]
-        eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
-        eval(parse(text = paste0("top", which(c(top1, top2) == top3), " <- NA")))
-        eval(parse(text = paste0("label", which(c(top1, top2) == top3), " <- NA")))
         sugg3 <- paste0("You should offer more stable ", label3, " quality, specifically ",
                         top3, ".\nBecause there are many postive and negative comments related to ", top3, ".")
+
+        eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
+        eval(parse(text = paste0("label", which(c(top1, top2) == top3), " <- NA")))
+        eval(parse(text = paste0("top", which(c(top1, top2) == top3), " <- NA")))
+
     }
 
 
@@ -87,7 +90,6 @@ for (id in business_id) {
             c(top1, top2, top3, label1, label2, label3, sugg1, sugg2, sugg3, average_rating)
     i <- i + 1
     cat(sep = "", i, "/", length(business_id), "\n")
-    break
 }
 
 write.csv(suggestions, "./data/suggestions.csv")
