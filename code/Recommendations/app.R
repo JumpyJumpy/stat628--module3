@@ -3,12 +3,15 @@ library(dplyr)
 library(ggplot2)
 library(stringr)
 
-business <- read.csv('../../data/business.csv') %>%
+business <- read.csv('data/business.csv') %>%
     mutate(across(where(is.factor), as.character))
-suggestions <- read.csv('../../data/suggestions.csv') %>%
+word_sugs <- read.csv('data/suggestions.csv') %>%
     mutate(across(c(suggestion1, suggestion2, suggestions3),
                   ~str_replace_all(., '\n', ' '))) %>%
     mutate(across(where(is.factor), as.character))
+attr_sugs <- read.csv('data/attributes_suggestions.csv') %>%
+    mutate(across(where(is.factor), as.character))
+attr <- read.csv('data/Attributes_advice.csv')
 
 ui <- fluidPage(
     titlePanel('Recommendations Based on Yelp Reviews'),
@@ -24,10 +27,12 @@ ui <- fluidPage(
         mainPanel(
             plotOutput('RankBar', width = '75%', height = '300px'),
             htmlOutput('Rank'),
-            h3('Suggestions'),
+            h4('Word-Based Suggestions'),
             htmlOutput('Words'),
             br(),
-            htmlOutput('Suggestions')
+            htmlOutput('WordSugs'),
+            h4('Other Suggestions'),
+            htmlOutput('AttrSugs')
         )
     )
 )
@@ -51,12 +56,9 @@ server <- function(input, output, session) {
         )
     })
     output$RankBar <- renderPlot({
-        if(input$State == '' | input$City == '' | input$Name == '' | input$Address == '') {
-            return(NULL)
-        }
         businesses_city <- (business %>% filter(
             state == input$State & city == input$City))$business_id
-        ratings_city <- suggestions %>% filter(business_id %in% businesses_city) %>%
+        ratings_city <- word_sugs %>% filter(business_id %in% businesses_city) %>%
             group_by(business_id) %>% summarize_at(vars(average_rating), mean) %>%
             arrange(desc(average_rating))
         bid <- (business %>% filter(
@@ -70,12 +72,9 @@ server <- function(input, output, session) {
             )
     })
     output$Rank <-renderText({
-        if(input$State == '' | input$City == '' | input$Name == '' | input$Address == '') {
-            return(NULL)
-        }
         businesses_city <- (business %>% filter(
             state == input$State & city == input$City))$business_id
-        ratings_city <- suggestions %>% filter(business_id %in% businesses_city) %>%
+        ratings_city <- word_sugs %>% filter(business_id %in% businesses_city) %>%
             group_by(business_id) %>% summarize_at(vars(average_rating), mean) %>%
             arrange(desc(average_rating))
         bid <- (business %>% filter(
@@ -85,13 +84,10 @@ server <- function(input, output, session) {
               dim(ratings_city)[1], 'businesses</b>')
     })
     output$Words <- renderText({
-        if(input$State == '' | input$City == '' | input$Name == '' | input$Address == '') {
-            return(NULL)
-        }
         id <- (business %>% filter(
             state == input$State & city == input$City & name == input$Name &
                 address == input$Address))$business_id
-        info <- suggestions %>% filter(business_id == id)
+        info <- word_sugs %>% filter(business_id == id)
         words <- c()
         if(!is.na(info$word1)) words <- c(words, info$word1)
         if(!is.na(info$word2)) words <- c(words, info$word2)
@@ -100,19 +96,39 @@ server <- function(input, output, session) {
               paste(words, collapse = ', ')
         )
     })
-    output$Suggestions <- renderText({
-        if(input$State == '' | input$City == '' | input$Name == '' | input$Address == '') {
-            return(NULL)
-        }
+    output$WordSugs <- renderText({
         id <- (business %>% filter(
             state == input$State & city == input$City & name == input$Name &
                 address == input$Address))$business_id
-        info <- suggestions %>% filter(business_id == id)
+        info <- word_sugs %>% filter(business_id == id)
         sug <- c()
         if(!is.na(info$suggestion1)) sug <- c(sug, info$suggestion1)
         if(!is.na(info$suggestion2)) sug <- c(sug, info$suggestion2)
         if(!is.na(info$suggestions3)) sug <- c(sug, info$suggestions3)
-        paste(sug, collapse = '<br>')
+        paste(sug, collapse = '<br><br>')
+    })
+    output$AttrSugs <- renderText({
+        id <- (business %>% filter(
+            state == input$State & city == input$City & name == input$Name &
+                address == input$Address))$business_id
+        info <- attr %>% filter(business_id == id)
+        sug <- c()
+        if(is.na(info$RestaurantsDelivery) | info$RestaurantsDelivery == 'False') {
+            sug <- c(sug, attr_sugs$Suggestions[1])
+        }
+        if(is.na(info$street) | info$street == 'False') {
+            sug <- c(sug, attr_sugs$Suggestions[2])
+        }
+        if(is.na(info$OutdoorSeating) | info$OutdoorSeating == 'False') {
+            sug <- c(sug, attr_sugs$Suggestions[3])
+        }
+        if(is.na(info$HasTV) | info$HasTV == 'True') {
+            sug <- c(sug, attr_sugs$Suggestions[4])
+        }
+        if(is.na(info$classy) | info$classy == 'False') {
+            sug <- c(sug, attr_sugs$Suggestions[6])
+        }
+        paste(sug, collapse = '<br><br>')
     })
 }
 

@@ -1,0 +1,7 @@
+﻿Attributes,Suggestions
+when Delivery=FALSE,Providing delivery service can definitely help improve rating.
+when street park=FALSE,"Providing street parking is convenient for customers and can improve customers' satisfaction by 0.22 stars. If it's hard to get available street parking, other types of parking space can also help."
+when outdoor seating=FALSE,People love fresh air so having outdoor seating can help your business outrace others'. It can help improve rating by 0.15.
+when HasTV=TRUE,The atmosphere in a highly rated coffe shop may not bear a noisy tv. Removing tv can help rebuild the ambience and improve rating by 0.21.
+when Wifi=Free/no/paid,There is no difference in having Wifi or no wifi with respect to ratings
+when classy=TRUE,It would be a good choice to provide a classy environment which can influence the rating positively.
