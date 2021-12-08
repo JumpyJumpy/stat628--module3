@@ -17,7 +17,7 @@ All relavant codes are in [code]() folder. Codes are written in `Python` and `R`
 
 ## Image
 There are two subfolders inside image folder
-The [EDA]() folder contains the images produced about the distribution of specific word in the first presentation
+The [EDA](https://github.com/JumpyJumpy/stat628-module3/tree/master/image/EDA) folder contains the images produced about the distribution of specific word in the first presentation
 The [Attribute Analysis]() folder contains the images produced about the histograms comparing scaled ratings
 
 ## Authors
