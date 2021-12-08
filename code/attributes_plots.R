@@ -56,6 +56,8 @@ model <- aov(stars ~ . - business_id, data = anova_factor)
 summary(model)
 
 
+# By Tianyue Luo and Hengrui Qu#
+
 library(xtable)
 print(xtable(anova(model)))
 
