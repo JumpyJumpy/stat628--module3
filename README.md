@@ -7,4 +7,5 @@ businesses on Yelp by using data provided by Yelp, and to suggest practical and
 specific action plans for business owners to improve their business.
 
 ## Data
-The 
+The raw datasets are in the format of `.json` and they are too large to be uploaded to GitHub, but they can be accessed at [https://uwmadison.box.com/s/8864nymigxb3r4g2u2o5s74xspsutlrd](https://uwmadison.box.com/s/8864nymigxb3r4g2u2o5s74xspsutlrd).
+The [data]() folder contains 
