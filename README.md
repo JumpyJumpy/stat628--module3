@@ -12,10 +12,12 @@ The raw datasets are in the format of `.json` and they are too large to be uploa
 The [data]() folder contains 
 
 
-## Authors
+##
 
-Shubo Lin: slin268@wisc.edu  
-Hengrui Qu: hengrui.qu@wisc.edu  
-Nilay Varshney: nvarshney2@wisc.edu  
-Tianyue Luo: tluo48@wisc.edu  
+## Authors
+If you have any questions please contact:  
+- Shubo Lin: slin268@wisc.edu  
+- Hengrui Qu: hengrui.qu@wisc.edu  
+- Nilay Varshney: nvarshney2@wisc.edu  
+- Tianyue Luo: tluo48@wisc.edu  
 
