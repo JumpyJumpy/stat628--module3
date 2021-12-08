@@ -27,11 +27,11 @@ for (id in business_id) {
 
         if (top1_test$p.value < 0.1) {
             sugg1 <- paste0("You should improve the quality of ", label1, ", specifically ",
-                            top1, ".\nBecause comments related to ", top1,
+                            top1, ", because comments related to ", top1,
                             " is statistically lower than your average ratings")
         } else {
             sugg1 <- paste0("You are doing well in ", label1, ", specifically ",
-                            top1, ".\nBecause comments related to ", top1,
+                            top1, ", because comments related to ", top1,
                             " is not statistically lower than your average ratings")
         }
     } else {
@@ -47,11 +47,11 @@ for (id in business_id) {
 
         if (top2_test$p.value < 0.1) {
             sugg2 <- paste0("You should improve the quality of ", label2, ", specifically ",
-                            top2, ".\nBecause comments related to ", top2,
+                            top2, ", because comments related to ", top2,
                             " is statistically lower than your average ratings")
         } else {
             sugg2 <- paste0("You are doing well in ", label2, ", specifically ",
-                            top2, ".\nBecause comments related to ", top2,
+                            top2, ", because comments related to ", top2,
                             " is not statistically lower than your average ratings")
         }
     } else {
@@ -65,7 +65,7 @@ for (id in business_id) {
         label3 <- label$Kind[label$Var1 == top3][1]
 
         sugg3 <- paste0("You should improve the quality of ", label3, ", specifically ",
-                        top3, ".\nBecause negative comments are mostly related to ", top3, ".")
+                        top3, ", because negative comments are mostly related to ", top3, ".")
     } else if (is.na(top3)) {
         top3 <- NA
         sugg3 <- NA
@@ -76,7 +76,7 @@ for (id in business_id) {
         top3 <- as.character(top3)
         label3 <- label$Kind[label$Var1 == top3][1]
         sugg3 <- paste0("You should offer more stable ", label3, " quality, specifically ",
-                        top3, ".\nBecause there are many positive and negative comments related to ", top3, ".")
+                        top3, ", because there are many positive and negative comments related to ", top3, ".")
 
         eval(parse(text = paste0("sugg", which(c(top1, top2) == top3), " <- NA")))
         eval(parse(text = paste0("label", which(c(top1, top2) == top3), " <- NA")))
