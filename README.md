@@ -11,9 +11,9 @@ specific action plans for business owners to improve their business.
 
 The raw datasets are in the format of `.json` and they are too large to be uploaded to GitHub, but they can be accessed at [https://uwmadison.box.com/s/8864nymigxb3r4g2u2o5s74xspsutlrd](https://uwmadison.box.com/s/8864nymigxb3r4g2u2o5s74xspsutlrd).
 The [data]() folder contains 6 related dataset.
-[`business.csv`] is part of the original data; [`Attributes_advice.csv`] is the data after splitting the attributes.
-[`tf_idf_words.csv`] and [`word_list.csv`] contains the words selected by td-idf and words we care about selected from the tf-idf results.
-[`attributes.suggestions.csv`] and [ `suggestions.csv`] contains our final general suggestions based on attributes and specific suggestions based on reviews.
+`business.csv` is part of the original data; `Attributes_advice.csv` is the data after splitting the attributes.
+`tf_idf_words.csv` and `word_list.csv` contains the words selected by td-idf and words we care about selected from the tf-idf results.
+`attributes.suggestions.csv` and  `suggestions.csv` contains our final general suggestions based on attributes and specific suggestions based on reviews.
 
 
 ## Code
