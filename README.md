@@ -12,7 +12,8 @@ The raw datasets are in the format of `.json` and they are too large to be uploa
 The [data]() folder contains 
 
 
-##
+## Code
+All relavant codes are in [code]() folder. Codes are written in `Python` and `R`. 
 
 ## Authors
 If you have any questions please contact:  
