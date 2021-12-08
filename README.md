@@ -18,8 +18,14 @@ The [data]() folder contains 6 related dataset.
 
 ## Code
 All relavant codes are in [code]() folder. Codes are written in `Python` and `R`. 
-- `attribute_frequency.py` read the `business.json` into a dataframe, flattened all nested columns, and write it to a `.csv` file.
-
+- `attribute_frequency.py` read the `business.json` into a dataframe, flattened all nested columns, and write it to a `.csv` file.  
+- `attributes_analysis.R` 
+- `distribution.R`
+- `get_reviews.py`
+- `read_json.py`
+- `tf_idf.py`
+- `word_classification.py`
+- `word_t_test.R`
 
 ## Image
 There are two subfolders inside image folder
