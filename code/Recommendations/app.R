@@ -64,12 +64,12 @@ server <- function(input, output, session) {
         bid <- (business %>% filter(
             state == input$State & city == input$City & name == input$Name &
                 address == input$Address))$business_id
-        ratings_city %>% ggplot(aes(x = average_rating)) + geom_histogram(binwidth = 0.2) +
+        ratings_city %>% ggplot(aes(x = average_rating)) + geom_histogram(binwidth = 0.15, fill = "grey") +
             xlab('Average Rating from Reviews (Stars)') + ylab('Number of Businesses') +
             ggtitle(paste('Average Rating for Businesses in', input$City, input$State)) +
             geom_vline(xintercept =
-                (ratings_city %>% filter(business_id == bid))$average_rating
-            )
+                (ratings_city %>% filter(business_id == bid))$average_rating, 
+                linetype="dashed", color = "coral") + theme_bw()
     })
     output$Rank <-renderText({
         businesses_city <- (business %>% filter(
@@ -93,7 +93,8 @@ server <- function(input, output, session) {
         if(!is.na(info$word2)) words <- c(words, info$word2)
         if(!is.na(info$word3)) words <- c(words, info$word3)
         paste('<b>Most Important Words (Based on Reviews):</b>',
-              paste(words, collapse = ', ')
+              "<font color=\"#FF7F50\"><b>", paste(words, collapse = ', '),
+              "</b></font>"
         )
     })
     output$WordSugs <- renderText({
