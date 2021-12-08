@@ -28,11 +28,11 @@ for (id in business_id) {
         if (top1_test$p.value < 0.1) {
             sugg1 <- paste0("You should improve the quality of ", label1, ", specifically ",
                             top1, ".\nBecause comments related to ", top1,
-                            "is statistically lower than your average ratings")
+                            " is statistically lower than your average ratings")
         } else {
             sugg1 <- paste0("You are doing well in ", label1, ", specifically ",
                             top1, ".\nBecause comments related to ", top1,
-                            "is not statistically lower than your average ratings")
+                            " is not statistically lower than your average ratings")
         }
     } else {
         top1 <- NA
@@ -48,11 +48,11 @@ for (id in business_id) {
         if (top2_test$p.value < 0.1) {
             sugg2 <- paste0("You should improve the quality of ", label2, ", specifically ",
                             top2, ".\nBecause comments related to ", top2,
-                            "is statistically lower than your average ratings")
+                            " is statistically lower than your average ratings")
         } else {
             sugg2 <- paste0("You are doing well in ", label2, ", specifically ",
                             top2, ".\nBecause comments related to ", top2,
-                            "is not statistically lower than your average ratings")
+                            " is not statistically lower than your average ratings")
         }
     } else {
         top2 <- NA
