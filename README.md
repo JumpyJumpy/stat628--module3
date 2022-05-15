@@ -18,9 +18,9 @@ The [data]() folder contains 6 related dataset.
 
 ## Code
 All relavant codes are in [code]() folder. Codes are written in `Python` and `R`. 
-- `attribute_frequency.py` reads the `business.json` into a dataframe, flattened all nested columns. Then it counts the frequencies of all attributes and writes it to a `.csv` file.  
+- `attribute_frequency.py` reads `business.json` into a dataframe, flattened all nested columns. Then it counts the frequencies of all attributes and writes them to a `.csv` file.  
 - `attributes_analysis.R` does analysis on the words that are captured.
-- `distribution.R` finds and plot the distributions of certain words.
+- `distribution.R` finds and plots the distributions of certain words.
 - `get_reviews.py` and `read_json.py` read all relevant `.json` files line by line and capture the desired columns.
 - `word_classification.py` classifies different types of words.
 - `tf_idf.py` sorted all the words based on tf-idf.
